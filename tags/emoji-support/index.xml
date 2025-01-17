@@ -3,5 +3,5 @@
 &lt;p>The &lt;a href="https://gohugo.io/functions/emojify/">emojify&lt;/a> function can be called directly in templates or &lt;a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes&lt;/a>.&lt;/p>
 &lt;p>To enable emoji globally, set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code> in your site’s &lt;a href="https://gohugo.io/getting-started/configuration/">configuration&lt;/a> and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p>
 &lt;p>The &lt;a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet&lt;/a> is a useful reference for emoji shorthand codes.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;hr>
 &lt;p>&lt;strong>N.B.&lt;/strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p></description></item></channel></rss>

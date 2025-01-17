@@ -4,7 +4,7 @@
 &lt;p>The &lt;a href="https://gohugo.io/functions/emojify/">emojify&lt;/a> function can be called directly in templates or &lt;a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes&lt;/a>.&lt;/p>
 &lt;p>To enable emoji globally, set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code> in your site’s &lt;a href="https://gohugo.io/getting-started/configuration/">configuration&lt;/a> and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p>
 &lt;p>The &lt;a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet&lt;/a> is a useful reference for emoji shorthand codes.&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;hr>
 &lt;p>&lt;strong>N.B.&lt;/strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://geraaer.github.io/blogs/placeholder-text/</link><pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate><guid>https://geraaer.github.io/blogs/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
 &lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
 &lt;ol>
@@ -13,18 +13,4 @@
 &lt;li>Eris modo&lt;/li>
 &lt;li>Spargitque ferrea quos palude&lt;/li>
 &lt;/ol>
-&lt;p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p></description></item><item><title>Rich Content</title><link>https://geraaer.github.io/blogs/rich-content/</link><pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate><guid>https://geraaer.github.io/blogs/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
-&lt;h2 id="gist-simple-shortcode">Gist Simple Shortcode&lt;/h2>
-&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist spf13 7896402 &amp;#34;img.html&amp;#34; &amp;gt;}}
-&lt;/code>&lt;/pre>&lt;!-- raw HTML omitted -->
-&lt;h2 id="twitter-simple-shortcode">Twitter Simple Shortcode&lt;/h2>
-&lt;pre tabindex="0">&lt;code>{{&amp;lt; tweet GoHugoIO 1315233626070503424 &amp;gt;}}
-&lt;/code>&lt;/pre>&lt;!-- raw HTML omitted -->
-&lt;h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode&lt;/h2>
-&lt;pre tabindex="0">&lt;code>{{&amp;lt; vimeo 146022717 &amp;gt;}}
-&lt;/code>&lt;/pre>&lt;!-- raw HTML omitted -->
-&lt;h2 id="youtube-simple-shortcode">Youtube Simple Shortcode&lt;/h2>
-&lt;pre tabindex="0">&lt;code>{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
-&lt;/code>&lt;/pre>&lt;!-- raw HTML omitted -->
-&lt;h2 id="theme-custom-shortcodes">Theme Custom Shortcodes&lt;/h2>
-&lt;p>These shortcodes are not Hugo built-ins, but are provided by the theme.&lt;/p></description></item></channel></rss>
+&lt;p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p></description></item></channel></rss>
