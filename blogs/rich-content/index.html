@@ -32,7 +32,7 @@
   <meta property="og:site_name" content="My New Hugo Site">
   <meta property="og:title" content="Rich Content">
   <meta property="og:description" content="Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Gist Simple Shortcode {{&lt; gist spf13 7896402 &#34;img.html&#34; &gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.">
+Gist Simple Shortcode {{&lt; gist spf13 7896402 &#34;img.html&#34; &gt;}} Twitter Simple Shortcode {{&lt; tweet GoHugoIO 1315233626070503424 &gt;}} --&gt;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -46,7 +46,7 @@ Gist Simple Shortcode {{&lt; gist spf13 7896402 &#34;img.html&#34; &gt;}} Theme 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Rich Content">
   <meta name="twitter:description" content="Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Gist Simple Shortcode {{&lt; gist spf13 7896402 &#34;img.html&#34; &gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.">
+Gist Simple Shortcode {{&lt; gist spf13 7896402 &#34;img.html&#34; &gt;}} Twitter Simple Shortcode {{&lt; tweet GoHugoIO 1315233626070503424 &gt;}} --&gt;">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -387,12 +387,9 @@ Rich Content | My New Hugo Site
 <script src="https://gist.github.com/spf13/7896402.js?file=img.html"></script>
 
 <br>
-<!-- 
-## Twitter Simple Shortcode
-```
-{{< tweet GoHugoIO 1315233626070503424 >}}
-```
-<br>
+<h2 id="twitter-simple-shortcode">Twitter Simple Shortcode</h2>
+<pre tabindex="0"><code>{{&lt; tweet GoHugoIO 1315233626070503424 &gt;}}
+</code></pre><br>
 
 <br>
  -->
@@ -421,17 +418,30 @@ Rich Content | My New Hugo Site
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w7Ft2ymGmfc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
-<br> -->
-<h2 id="theme-custom-shortcodes">Theme Custom Shortcodes</h2>
-<p>These shortcodes are not Hugo built-ins, but are provided by the theme.</p>
-<h3 id="responsive-images-with-cloudinary">Responsive Images with Cloudinary</h3>
-<p>You can learn more about this <a href="https://cloudinary.com/documentation/responsive_images">here</a>.</p>
-<p>Set the <code>cloudinary_cloud_name</code> parameter in your site config to use this shortcode.</p>
-<pre tabindex="0"><code>{{&lt; dynamic-img src=&#34;/my/image/on/cloudinary&#34; title=&#34;A title for the image&#34; &gt;}}
-</code></pre><p>Note that you do not include the file extension (e.g. <code>.png</code>) in the <code>src</code> parameter, as the shortcode will automatically determine the best quality and format for the user&rsquo;s device.</p>
-<p>Optionally, you can customize the general CSS styles for the image:</p>
-<pre tabindex="0"><code>{{&lt; dynamic-img src=&#34;/my/image/on/cloudinary&#34; title=&#34;A title for the image&#34; style=&#34;max-width:60%&#34; &gt;}}
-</code></pre>
+<br>
+
+## Theme Custom Shortcodes
+
+These shortcodes are not Hugo built-ins, but are provided by the theme.
+
+### Responsive Images with Cloudinary
+
+You can learn more about this [here](https://cloudinary.com/documentation/responsive_images).
+
+Set the `cloudinary_cloud_name` parameter in your site config to use this shortcode.
+
+```
+{{< dynamic-img src="/my/image/on/cloudinary" title="A title for the image" >}}
+```
+
+Note that you do not include the file extension (e.g. `.png`) in the `src` parameter, as the shortcode will automatically determine the best quality and format for the user's device.
+
+Optionally, you can customize the general CSS styles for the image:
+
+```
+{{< dynamic-img src="/my/image/on/cloudinary" title="A title for the image" style="max-width:60%" >}}
+```
+
           </article>
         </div>
       </div>
@@ -446,11 +456,7 @@ Rich Content | My New Hugo Site
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#gist-simple-shortcode">Gist Simple Shortcode</a></li>
-    <li><a href="#theme-custom-shortcodes">Theme Custom Shortcodes</a>
-      <ul>
-        <li><a href="#responsive-images-with-cloudinary">Responsive Images with Cloudinary</a></li>
-      </ul>
-    </li>
+    <li><a href="#twitter-simple-shortcode">Twitter Simple Shortcode</a></li>
   </ul>
 </nav>
               </div>
