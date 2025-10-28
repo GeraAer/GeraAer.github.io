@@ -1,0 +1,46 @@
+/* 变量：默认留空白，交给各 skin 覆盖 */
+:root{
+  --bg: #111;
+  --fg: #eee;
+  --card: rgba(0,0,0,.6);
+  --muted: rgba(255,255,255,.08);
+  --link: #4da3ff;
+  --accent: #ff5577;
+}
+
+/* 基础布局与文字 */
+body.games-page{
+  background-color: var(--bg);
+  color: var(--fg);
+}
+.games-single .page-content{
+  background: var(--card);
+  padding: 1.25rem;
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+}
+.games-single h1,.games-single h2,.games-single h3{
+  color: var(--link);
+}
+
+/* 侧栏/卡片/TOC */
+.games-sidebar .card, .games-single .toc.card{
+  background: var(--card);
+  border: 1px solid var(--muted);
+  color: var(--fg);
+  border-radius: 12px;
+  padding: .75rem 1rem;
+}
+.games-single a{ color: var(--link); }
+.games-single a:hover{ color: var(--accent); }
+
+/* Mermaid（如果用了） */
+.games-single .mermaid{
+  background: var(--card);
+  border: 1px solid var(--link);
+  border-radius: 10px;
+  padding: 12px;
+}
+.games-single .mermaid .label text,
+.games-single .mermaid text{ fill: var(--link); }
+.games-single .mermaid .edgePath path.path{ stroke: var(--accent); }

@@ -1,7 +1,7 @@
 light mode */
 .light > *{
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
+    background-color: var(--background-color) ;
+    color: var(--text-color) ;
 }
 
 .light > #footer-socialNetworks-github-svg-path{
@@ -10,11 +10,11 @@ light mode */
 
 /* dark mode */
 .dark {
-    --background-color: var(--background-color-dark) !important;
-    --secondary-background-color: var(--secondary-background-color-dark) !important;
-    --text-color: var(--text-color-dark) !important;
-    --text-secondary-color: var(--text-secondary-color-dark) !important;
-    --text-link-color: var(--text-link-color-dark) !important;
+    --background-color: var(--background-color-dark) ;
+    --secondary-background-color: var(--secondary-background-color-dark) ;
+    --text-color: var(--text-color-dark) ;
+    --text-secondary-color: var(--text-secondary-color-dark) ;
+    --text-link-color: var(--text-link-color-dark) ;
     --primary-color: var(--primary-color-dark);
     --secondary-color: var(--secondary-color-dark);
 }
@@ -24,7 +24,7 @@ light mode */
 }
 
 .text-secondary {
-    color: var(--text-secondary-color) !important;
+    color: var(--text-secondary-color) ;
 }
 
 #theme-toggle:focus {
@@ -51,8 +51,8 @@ body:not(.dark) #sun {
 }
 
 body *::selection {
-    color: var(--text-color) !important;
-    background-color: var(--primary-color) !important;
+    color: var(--text-color) ;
+    background-color: var(--primary-color) ;
 }
 /* body {
     background-image: url("images/background.png");
