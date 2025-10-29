@@ -283,6 +283,28 @@ body.sf-page .tag-cloud .badge {
 }
 
 </style>
+<style>
+   
+  body.sf-page.bg-panorama{
+    background:
+      linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)) fixed,  
+      url("") center top / cover no-repeat fixed,
+      #000;  
+    background-attachment: fixed, fixed, scroll;  
+  }
+
+   
+  body.sf-page.bg-panorama #single{
+    max-width: 1200px; margin: 0 auto;
+    background: rgba(0,0,0,.92); padding: 2rem; border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0,0,0,.6);
+  }
+
+  @media (max-width: 1200px){
+    body.sf-page.bg-panorama #single{ border-radius: 0; padding: 1.25rem; }
+  }
+</style>
+
 
 
 

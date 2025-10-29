@@ -1,1 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Games on Jessica·Morningstar</title><link>https://geraaer.github.io/games/</link><description>Recent content in Games on Jessica·Morningstar</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://geraaer.github.io/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Silent Feast — Strategy &amp; Bluffing Vampire Card Game</title><link>https://geraaer.github.io/games/placeholder-text/</link><pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate><guid>https://geraaer.github.io/games/placeholder-text/</guid><description>A tense vampire-themed tabletop game where every sip pushes your luck: chain-drink for more BP, risk instant TOX from Vampire or Garlic blood, and outplay others with designate and item tactics.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Games on Jessica·Morningstar</title><link>https://geraaer.github.io/games/</link><description>Recent content in Games on Jessica·Morningstar</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://geraaer.github.io/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Throng: Evolution</title><link>https://geraaer.github.io/games/throng/</link><pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate><guid>https://geraaer.github.io/games/throng/</guid><description>&lt;script>document.addEventListener('DOMContentLoaded',()=>document.body.classList.add('throng-page'))&lt;/script>
+&lt;style>
+/* ====================== Throng: Evolution — Teal / Aqua / White page-only theme ====================== */
+/* Scope everything to body.throng-page to avoid touching other pages */
+:root {
+ --thr-text:#eaf8ff;
+ --thr-muted:#bfe7f0;
+ --thr-accent:#7be0c3; /* aqua/greenish */
+ --thr-accent-2:#52c7ea; /* teal */
+ --thr-bg:#081418; /* deep blue-black */
+ --thr-card:#0e1f24;
+ --thr-border:#17323a;
+}
+
+/* Base */
+body.throng-page{
+ color:var(--thr-text);
+ background: var(--thr-bg);
+}
+
+/* Optional panorama background if front-matter bgPanorama is set — this line remains inert if not used */
+body.throng-page{
+ background:
+ linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)) fixed,
+ url("{{ with .Params.bgPanorama }}{{ . }}{{ end }}") center top / cover no-repeat fixed,
+ var(--thr-bg);
+ background-attachment: fixed,fixed,scroll;
+}
+
+/* Main content wrappers (compatible with hugo-profile layouts) */
+body.throng-page #single,
+body.throng-page .content,
+body.throng-page .page-content{
+ background: rgba(8,20,24,.88);
+ border:1px solid var(--thr-border);
+ border-radius:16px;
+ box-shadow:0 10px 40px rgba(0,0,0,.35);
+ padding:2rem;
+}
+
+/* Headings */
+body.throng-page h1, body.throng-page h2{ color: var(--thr-accent); }
+body.throng-page h3, body.throng-page h4{ color: var(--thr-accent-2); }
+
+/* Links */
+body.throng-page a{
+ color: var(--thr-accent-2);
+ text-decoration: none;
+ border-bottom: 1px dotted rgba(124, 231, 227, .4);
+}
+body.throng-page a:hover{
+ color: var(--thr-accent);
+ border-bottom-color: var(--thr-accent);
+}
+
+/* Fold blocks (your shortcode) */
+body.throng-page details,
+body.throng-page .fold{
+ background: rgba(14,31,36,.7);
+ border:1px solid var(--thr-border);
+ border-radius:12px;
+ padding:.75rem 1rem;
+}
+body.throng-page summary{
+ color: var(--thr-accent);
+ cursor: pointer;
+}
+
+/* Quotes / Code */
+body.throng-page blockquote{
+ border-left: 3px solid var(--thr-accent-2);
+ color: var(--thr-muted);
+ background: rgba(14,31,36,.55);
+}
+body.throng-page pre, body.throng-page code{
+ background: #0b171b;
+ color:#e8f7ff;
+ border:1px solid var(--thr-border);
+}
+
+/* TOC / widgets */
+body.throng-page .toc,
+body.throng-page .sidebar .card,
+body.throng-page .widget{
+ background: var(--thr-card);
+ border:1px solid var(--thr-border);
+ border-radius:14px;
+ color: var(--thr-muted);
+}
+
+/* Tags */
+body.throng-page .tagcloud a,
+body.throng-page .tags a{
+ color: var(--thr-accent-2);
+}
+body.throng-page .tagcloud a:hover,
+body.throng-page .tags a:hover{
+ color: var(--thr-accent);
+}
+
+/* Responsive */
+@media (max-width: 992px){
+ body.throng-page #single{ border-radius:10px; padding:1.25rem; }
+}
+
+/* Mermaid (if present on this page) */
+body.throng-page .mermaid{
+ background: var(--thr-card);
+ border:1px solid var(--thr-border);
+ border-radius:10px;
+ padding:12px;
+}
+/* Table color fix for Throng page */
+body.throng-page table {
+ background-color: #0b1f1b; /* dark moss green */
+ border-collapse: collapse;
+ border: 1px solid var(--thr-border);
+}
+
+body.throng-page th {
+ background-color: #123c35; /* teal-green header */
+ color: var(--thr-accent);
+ border: 1px solid var(--thr-border);
+ padding: 8px 10px;
+}
+
+body.throng-page td {
+ background-color: rgba(11,31,27,0.9);
+ color: var(--thr-text);
+ border: 1px solid var(--thr-border);
+ padding: 8px 10px;
+}
+
+body.throng-page tr:nth-child(even) td {
+ background-color: rgba(10,26,22,0.8);
+}
+
+&lt;/style>
+&lt;style>
+/* 仅作用于本页 */
+body.throng-page .mermaid {
+ background: #0b1f1b !important;
+}
+
+/* ——SVG 文字：&lt;text>、.label 内部 text—— */
+body.throng-page .mermaid text,
+body.throng-page .mermaid .label,
+body.throng-page .mermaid .label text,
+body.throng-page .mermaid .edgeLabel text {
+ fill: #eaf8ff !important;
+ stroke: none !important;
+}
+
+/* ——foreignObject 里的 HTML 文字（节点/边标签最常见）—— */
+body.throng-page .mermaid .nodeLabel,
+body.throng-page .mermaid .edgeLabel,
+body.throng-page .mermaid .nodeLabel > *,
+body.throng-page .mermaid .edgeLabel > *,
+body.throng-page .mermaid foreignObject,
+body.throng-page .mermaid foreignObject div,
+body.throng-page .mermaid foreignObject span {
+ color: #eaf8ff !important;
+}
+
+/* Mermaid 10+ 的 flowchart 新类名兜底 */
+body.throng-page .mermaid .flowchart-label,
+body.throng-page .mermaid .flowchart-label span,
+body.throng-page .mermaid .edgeLabel .label span {
+ color: #eaf8ff !important;
+}
+
+/* 你之前的发光风格可保留（可选） */
+body.throng-page .mermaid text,
+body.throng-page .mermaid .label text {
+ filter: drop-shadow(0 0 3px rgba(152, 255, 240, 0.5));
+}
+&lt;/style>
+&lt;h1 id="throng">Throng&lt;/h1>
+&lt;h2 id="video">Video&lt;/h2>
+&lt;ul>
+&lt;li>
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qvsLO1EVzEc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="pdf--game-download">PDF &amp;amp; game download&lt;/h2>
+&lt;p>Partial Portolio PDF&lt;a href="https://geraaer.github.io/throng.pdf">click here&lt;/a>&lt;/p></description></item><item><title>Silent Feast — Strategy &amp; Bluffing Vampire Card Game</title><link>https://geraaer.github.io/games/silentfeast/</link><pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate><guid>https://geraaer.github.io/games/silentfeast/</guid><description>A tense vampire-themed tabletop game where every sip pushes your luck: chain-drink for more BP, risk instant TOX from Vampire or Garlic blood, and outplay others with designate and item tactics.</description></item></channel></rss>
