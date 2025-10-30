@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Puzzle on Jessica·Morningstar</title><link>https://geraaer.github.io/tags/puzzle/</link><description>Recent content in Puzzle on Jessica·Morningstar</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://geraaer.github.io/tags/puzzle/index.xml" rel="self" type="application/rss+xml"/><item><title>Every Star is Alive — Physics Puzzle Micro-Action</title><link>https://geraaer.github.io/games/star/</link><pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate><guid>https://geraaer.github.io/games/star/</guid><description>&lt;script>document.addEventListener('DOMContentLoaded',()=>document.body.classList.add('star-page'))&lt;/script>
+&lt;!-- =========================
+ INLINE CSS — Neon Space Theme (page-only)
+ ========================= -->
+&lt;style>
+/* ======= Neon Space Palette (page-only) ======= */
+body.star-page{
+ --bg:#07090f; /* deep space */
+ --bg-2:#0e1220; /* cards/sidebars */
+ --bg-3:#0b1020; /* mermaid/code */
+ --fg:#e8f5ff; /* primary text */
+ --muted:#a9bfd6; /* secondary text */
+ --link:#4bd7ff; /* links / nav links */
+ --accent:#68f0c6; /* headings / highlights */
+ --accent-2:#b58cff; /* hover / secondary accents */
+ --accent-danger:#ff5e7a; /* fail / danger */
+ --accent-warn:#ffd166; /* warn / tips */
+
+ /* Map to theme variables so theme components adopt this palette */
+ --text-color: var(--fg);
+ --text-secondary-color: var(--muted);
+ --text-link-color: var(--link);
+ --primary-color: var(--accent);
+ --secondary-color: var(--accent-2);
+ --background-color: var(--bg);
+ --secondary-background-color: var(--bg-2);
+}
+
+/* Base */
+html, body.star-page{ background:var(--bg) !important; color:var(--fg) !important; }
+body.star-page a{ color:var(--link) !important; }
+body.star-page a:hover{ color:var(--accent-2) !important; }
+
+/* Navbar / header (this page only) */
+body.star-page header, body.star-page .navbar, body.star-page nav.navbar, body.star-page .site-header{
+ background:linear-gradient(180deg,#07090f 0%, #0b0f19 100%) !important;
+ border-bottom:1px solid #131a2b !important;
+}
+body.star-page .navbar a, body.star-page .navbar .nav-link, body.star-page .navbar-brand{ color:var(--link) !important; }
+body.star-page .navbar a:hover, body.star-page .navbar .nav-link:hover{ color:var(--accent-2) !important; }
+
+/* Title (bulletproof against theme .text-primary) */
+body.star-page #single .title h1,
+body.star-page #single .title h1 a,
+body.star-page .post-title,
+body.star-page .post-title a{
+ color:var(--accent) !important;
+ -webkit-text-fill-color:var(--accent) !important;
+ text-shadow:none !important; text-decoration:none !important;
+}
+
+/* Content headings */
+body.star-page #single .page-content h2,
+body.star-page #single .page-content h3,
+body.star-page #single .page-content h4,
+body.star-page #single .page-content h5,
+body.star-page #single .page-content h6{ color:var(--accent) !important; }
+body.star-page #single .page-content h2 a,
+body.star-page #single .page-content h3 a{ color:var(--accent) !important; text-decoration:none !important; }
+body.star-page #single .page-content h2 a:hover,
+body.star-page #single .page-content h3 a:hover{ color:var(--accent-2) !important; }
+
+/* Cards / TOC / sidebar */
+body.star-page .card,
+body.star-page .widget,
+body.star-page .sidebar,
+body.star-page .toc,
+body.star-page nav#TableOfContents,
+body.star-page .table-of-contents{
+ background:var(--bg-2) !important; color:var(--fg) !important;
+ border:1px solid #131a2b !important; border-radius:12px; box-shadow:none !important;
+}
+body.star-page .toc a, body.star-page nav#TableOfContents a{ color:var(--link) !important; text-decoration:none !important; }
+body.star-page .toc a:hover, body.star-page nav#TableOfContents a:hover{ color:var(--accent-2) !important; }
+
+/* Tags widget */
+body.star-page .tags, body.star-page .tag-cloud, body.star-page .widget-tags{
+ background:var(--bg-2) !important; color:var(--fg) !important;
+ border:1px solid #131a2b !important; border-radius:12px; padding:.75rem 1rem;
+}
+body.star-page .tags a, body.star-page .tag-cloud a, body.star-page .widget-tags a{
+ color:var(--link) !important; text-decoration:none !important; border-bottom:1px solid transparent;
+}
+body.star-page .tags a:hover, body.star-page .tag-cloud a:hover, body.star-page .widget-tags a:hover{
+ color:var(--accent-2) !important; border-color:var(--accent-2) !important;
+}
+body.star-page .tags .badge, body.star-page .tag-cloud .badge{
+ background:var(--bg-2) !important; color:var(--link) !important; border:1px solid #233256 !important;
+}
+
+/* Tables */
+body.star-page table{ width:100%; border-collapse:collapse; background:var(--bg-2) !important; }
+body.star-page thead th{ background:#0f1426 !important; color:var(--fg) !important; border-bottom:2px solid #1b2746 !important; }
+body.star-page td, body.star-page th{ border:1px solid #1b2746 !important; padding:.6rem .8rem; }
+body.star-page tbody tr:nth-child(odd){ background:#0a0f21; }
+body.star-page tbody tr:hover{ background:#0f1730; }
+
+/* Code */
+body.star-page pre, body.star-page code{
+ background:#0a0f1d !important; color:#eaf7ff !important; border:1px solid #16213b !important;
+}
+body.star-page pre{ border-radius:10px; padding:12px 14px; overflow:auto; }
+
+/* Buttons */
+body.star-page .btn, body.star-page .btn-primary, body.star-page a.btn{
+ background:linear-gradient(180deg,#69f0c7,#4bd7ff) !important; color:#011016 !important; border:1px solid #1d2b4a !important;
+}
+body.star-page .btn:hover, body.star-page .btn-primary:hover{
+ background:linear-gradient(180deg,#b58cff,#68f0c6) !important; color:#010a0e !important;
+}
+
+/* Fold blocks */
+body.star-page details.fold-block{ background:var(--bg-2); border:1px solid #131a2b; border-radius:12px; padding:.6rem .9rem; }
+body.star-page details.fold-block summary{ color:var(--link); cursor:pointer; font-weight:600; }
+body.star-page details.fold-block[open] summary{ color:var(--accent) !important; }
+
+/* Images */
+.star-img-center{ display:block; margin:1.2rem auto; max-width:90%; border-radius:10px; }
+.star-img-row{ display:flex; gap:10px; justify-content:center; margin:1rem 0; flex-wrap:wrap; }
+.star-img-row img{ width:31%; min-width:220px; border-radius:8px; }
+
+/* Mermaid — high-contrast dark */
+.star-page .mermaid{ background:var(--bg-3) !important; border:1px solid #1b2746 !important; border-radius:12px; padding:12px; }
+.star-page .mermaid svg{ color:var(--fg) !important; }
+.star-page .mermaid .label, .star-page .mermaid .label text, .star-page .mermaid text{ fill:var(--fg) !important; }
+.star-page .mermaid .node rect, .star-page .mermaid .node polygon{ fill:#0e1220 !important; stroke:#68f0c6 !important; }
+.star-page .mermaid .edgePath path.path{ stroke:#4bd7ff !important; }
+.star-page .mermaid .arrowheadPath{ fill:#4bd7ff !important; stroke:#4bd7ff !important; }
+.star-page .mermaid .edgeLabel rect{ fill:#0e1220 !important; stroke:#68f0c6 !important; rx:6; ry:6; }
+.star-page .mermaid .edgeLabel tspan{ fill:#e8f5ff !important; }
+
+/* Optional: full-page panorama background */
+body.star-page.bg-panorama{
+ background:
+ radial-gradient(1200px 700px at 50% -10%, rgba(104,240,198,.12), rgba(75,215,255,0) 70%) fixed,
+ url("{{ .Params.bgPanorama }}") center top / cover no-repeat fixed,
+ var(--bg);
+ background-attachment: fixed, fixed, scroll;
+}
+body.star-page.bg-panorama #single{
+ max-width:1200px; margin:0 auto; background:rgba(7,9,15,.92);
+ padding:2rem; border-radius:16px; box-shadow:0 0 40px rgba(0,0,0,.55);
+}
+@media (max-width:1200px){ body.star-page.bg-panorama #single{ border-radius:0; padding:1.25rem; } }
+&lt;/style>
+&lt;h1 id="every-star-is-alive">Every Star is Alive&lt;/h1>
+&lt;blockquote>
+&lt;p>&lt;strong>Genre&lt;/strong>: Physics puzzle · Micro-action · Minimal arcade&lt;br>
+&lt;strong>Hook&lt;/strong>: One-finger control with &lt;em>readable, tangible gravity&lt;/em>.&lt;br>
+Instant feedback loop: &lt;strong>Approach → capture → becomes an orbital ally → score&lt;/strong>. Moving hazards and a &lt;strong>portal&lt;/strong> create a tight &lt;strong>collect → exit&lt;/strong> loop.&lt;/p></description></item></channel></rss>
