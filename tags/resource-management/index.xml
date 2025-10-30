@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Resource Management on Jessica·Morningstar</title><link>https://geraaer.github.io/tags/resource-management/</link><description>Recent content in Resource Management on Jessica·Morningstar</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://geraaer.github.io/tags/resource-management/index.xml" rel="self" type="application/rss+xml"/><item><title>TULIPS Café — Dual Perspective Simulation Game</title><link>https://geraaer.github.io/games/tulips/</link><pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate><guid>https://geraaer.github.io/games/tulips/</guid><description>&lt;script>document.addEventListener('DOMContentLoaded',()=>document.body.classList.add('tulips-page'))&lt;/script>
+&lt;!-- =========================
+ LOCAL PAGE STYLE (Warm Latte Theme)
+ ========================= -->
+&lt;style>
+/* ======= Warm Latte Palette ======= */
+body.tulips-page {
+ --bg: #1b1613;
+ --bg-2: #241e1a;
+ --bg-3: #2c2520;
+ --fg: #f1e5d0;
+ --muted: #d3c3aa;
+ --link: #d6aa70;
+ --accent: #d3984a;
+ --accent-2: #8f5b2c;
+
+ --text-color: var(--fg);
+ --text-secondary-color: var(--muted);
+ --text-link-color: var(--link);
+ --primary-color: var(--accent);
+ --secondary-color: var(--accent-2);
+ --background-color: var(--bg);
+ --secondary-background-color: var(--bg-2);
+}
+
+html, body.tulips-page { background: var(--bg) !important; color: var(--fg) !important; }
+body.tulips-page h1, body.tulips-page h2, body.tulips-page h3, body.tulips-page h4, body.tulips-page h5 {
+ color: var(--accent) !important;
+}
+body.tulips-page a { color: var(--link) !important; }
+body.tulips-page a:hover { color: var(--accent-2) !important; }
+.tulips-img-center { display: block; margin: 1.2rem auto; max-width: 90%; border-radius: 10px; }
+.tulips-img-row { display: flex; gap: 10px; justify-content: center; margin: 1rem 0; }
+.tulips-img-row img { width: 31%; border-radius: 8px; }
+&lt;/style>
+&lt;style>
+ body.{{ . }}{
+ --text-color: #f1e5d0;
+ --text-secondary-color: #d3c3aa;
+ --text-link-color: #d6aa70;
+ --primary-color: #d3984a;
+ --secondary-color: #8f5b2c;
+ --background-color: #1b1613;
+ --secondary-background-color: #241e1a;
+ }
+&lt;/style>
+&lt;style>
+/* ===============================
+ TULIPS — Warm Coffee 内联样式
+ 只作用于 body.tulips-page（避免影响全站）
+ =============================== */
+body.tulips-page{
+ /* 调色盘（暖咖配色） */
+ --bg: #14110F; /* 深咖底色 */
+ --bg-2: #1B1512; /* 卡片/侧栏 */
+ --bg-3: #221A16; /* 更深背景 */
+ --fg: #EEE4D6; /* 奶油白主字色 */
+ --muted: #CDBBA4; /* 次要文字 */
+ --link: #D7B37A; /* 焦糖 链接 */
+ --accent: #C98A4B; /* 太妃糖 标题/主色 */
+ --accent-2: #8C4B1F; /* 焦糖深 Hover */
+
+ /* 映射到主题通用变量（覆盖 theme.css） */
+ --text-color: var(--fg);
+ --text-secondary-color: var(--muted);
+ --text-link-color: var(--link);
+ --primary-color: var(--accent);
+ --secondary-color: var(--accent-2);
+ --background-color: var(--bg);
+ --secondary-background-color: var(--bg-2);
+}
+
+/* 页面背景 &amp; 文字基色 */
+html, body.tulips-page{ background: var(--bg) !important; }
+body.tulips-page{ color: var(--fg) !important; }
+
+/* ===== 导航（若想仅本页变色）===== */
+body.tulips-page header,
+body.tulips-page .navbar,
+body.tulips-page nav.navbar{
+ background: linear-gradient(180deg,#17120F 0%, #120E0C 100%) !important;
+ border-bottom: 1px solid #2A201B !important;
+}
+body.tulips-page .navbar a,
+body.tulips-page .navbar .nav-link,
+body.tulips-page .navbar-brand{
+ color: var(--link) !important;
+}
+body.tulips-page .navbar a:hover,
+body.tulips-page .navbar .nav-link:hover{
+ color: var(--accent-2) !important;
+}
+
+/* ===== 标题颜色（强覆盖以防主题蓝盖掉） ===== */
+body.tulips-page #single .title h1,
+body.tulips-page #single .title h1 a,
+body.tulips-page .post-title,
+body.tulips-page .post-title a{
+ color: var(--accent) !important;
+ -webkit-text-fill-color: var(--accent) !important;
+ text-shadow: none !important;
+ text-decoration: none !important;
+}
+body.tulips-page #single .page-content h2,
+body.tulips-page #single .page-content h3,
+body.tulips-page #single .page-content h4,
+body.tulips-page #single .page-content h5,
+body.tulips-page #single .page-content h6{
+ color: var(--accent) !important;
+}
+body.tulips-page #single .page-content h2 a,
+body.tulips-page #single .page-content h3 a{
+ color: var(--accent) !important; text-decoration:none !important;
+}
+body.tulips-page #single .page-content h2 a:hover,
+body.tulips-page #single .page-content h3 a:hover{
+ color: var(--accent-2) !important;
+}
+
+/* ===== 链接 ===== */
+body.tulips-page a{ color: var(--link) !important; }
+body.tulips-page a:hover{ color: var(--accent-2) !important; }
+
+/* ===== 折叠块（fold shortcode）===== */
+body.tulips-page details.fold-block{
+ background: var(--bg-2); border:1px solid #2A201B; border-radius:12px; padding:.5rem .9rem;
+}
+body.tulips-page details.fold-block summary{
+ color: var(--link); cursor:pointer; font-weight:600;
+}
+body.tulips-page details.fold-block[open] summary{ color: var(--accent); }
+
+/* ===== 代码块 / 行内代码 ===== */
+body.tulips-page pre, body.tulips-page code{
+ background:#100C0A !important; color:#F2E9DC !important;
+ border:1px solid #2A201B !important;
+}
+body.tulips-page pre{
+ border-radius:10px; padding:12px 14px; overflow:auto;
+}
+
+/* ===== 表格（可读对比）===== */
+body.tulips-page table{ width:100%; border-collapse:collapse; background:var(--bg-2) !important; }
+body.tulips-page thead th{
+ background:#2A211D !important; color:var(--fg) !important;
+ border-bottom:2px solid #3A2E28 !important;
+}
+body.tulips-page td, body.tulips-page th{
+ border:1px solid #3A2E28 !important; padding:.65rem .8rem;
+}
+body.tulips-page tbody tr:nth-child(odd){ background:#1C1613; }
+body.tulips-page tbody tr:hover{ background:#251D19; }
+
+/* ===== 右侧 TOC / Tags / 侧栏卡片 ===== */
+body.tulips-page .card, body.tulips-page .widget,
+body.tulips-page .toc, body.tulips-page nav#TableOfContents,
+body.tulips-page .table-of-contents, body.tulips-page .sidebar{
+ background: var(--bg-2) !important; color: var(--fg) !important;
+ border: 1px solid #2A201B !important; border-radius:12px; box-shadow:none !important;
+}
+body.tulips-page .toc a, body.tulips-page nav#TableOfContents a{ color: var(--link) !important; }
+body.tulips-page .toc a:hover, body.tulips-page nav#TableOfContents a:hover{ color: var(--accent-2) !important; }
+
+/* Tag 链接（徽章/文字） */
+body.tulips-page .tags a, body.tulips-page .tag-cloud a, body.tulips-page .widget-tags a{
+ color: var(--link) !important; text-decoration:none !important; border-bottom:1px solid transparent;
+}
+body.tulips-page .tags a:hover, body.tulips-page .tag-cloud a:hover{ color: var(--accent-2) !important; border-color: var(--accent-2) !important; }
+body.tulips-page .tags .badge, body.tulips-page .tag-cloud .badge{
+ background:var(--bg-2) !important; color:var(--link) !important; border:1px solid #3A2E28 !important;
+}
+
+/* ===== 按钮 ===== */
+body.tulips-page .btn, body.tulips-page .btn-primary, body.tulips-page a.btn{
+ background: var(--accent) !important; color:#fff !important; border:1px solid #3A2E28 !important;
+}
+body.tulips-page .btn:hover, body.tulips-page .btn-primary:hover{ background: var(--accent-2) !important; }
+
+/* ===== Mermaid（暗色 &amp; 标签/边标签可读）===== */
+.tulips-page .mermaid{
+ background: var(--bg-3) !important; border:1px solid #3A2E28 !important; border-radius:12px; padding:12px;
+}
+.tulips-page .mermaid svg{ color: var(--fg) !important; }
+.tulips-page .mermaid .label,
+.tulips-page .mermaid .label text,
+.tulips-page .mermaid text{ fill: var(--fg) !important; }
+.tulips-page .mermaid .node rect,
+.tulips-page .mermaid .node circle,
+.tulips-page .mermaid .node polygon,
+.tulips-page .mermaid .node path{
+ fill:#1B1512 !important; stroke:#C98A4B !important; stroke-width:1.4px;
+}
+.tulips-page .mermaid .edgePath path.path{ stroke:#C98A4B !important; }
+.tulips-page .mermaid .edgeLabel rect{
+ fill:#1B1512 !important; stroke:#C98A4B !important; rx:6; ry:6;
+}
+/* 让 edgeLabel 的 “Yes/No” 文本也显白 */
+.tulips-page .mermaid .edgeLabel tspan{ fill: var(--fg) !important; }
+
+/* ===== 可选：全景背景（如需） ===== */
+body.tulips-page.bg-panorama{
+ background:
+ linear-gradient(rgba(20,17,15,.35), rgba(20,17,15,.35)) fixed,
+ url("{{ .Params.bgPanorama }}") center top / cover no-repeat fixed,
+ var(--bg);
+ background-attachment: fixed, fixed, scroll;
+}
+body.tulips-page.bg-panorama #single{
+ max-width: 1200px; margin: 0 auto;
+ background: rgba(20,17,15,.92); padding: 2rem; border-radius:16px;
+ box-shadow: 0 0 40px rgba(0,0,0,.55);
+}
+@media (max-width: 1200px){
+ body.tulips-page.bg-panorama #single{ border-radius:0; padding:1.25rem; }
+}
+&lt;/style>
+&lt;h1 id="tulips-café">TULIPS Café&lt;/h1>
+&lt;p>&lt;em>A magical dual-perspective café simulation.&lt;/em>&lt;/p></description></item></channel></rss>

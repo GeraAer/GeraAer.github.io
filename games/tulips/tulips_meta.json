@@ -1,0 +1,665 @@
+{
+  "table_of_contents": [
+    {
+      "title": "TULIPS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.0,
+          56.4625244140625
+        ],
+        [
+          383.8000183105469,
+          56.42578125
+        ],
+        [
+          383.8000183105469,
+          156.4625244140625
+        ],
+        [
+          50.0,
+          156.4625244140625
+        ]
+      ]
+    },
+    {
+      "title": "Overview",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          58.125,
+          290.0390625
+        ],
+        [
+          163.96800231933594,
+          290.0390625
+        ],
+        [
+          163.96800231933594,
+          315.47796630859375
+        ],
+        [
+          58.125,
+          315.47796630859375
+        ]
+      ]
+    },
+    {
+      "title": "Gameplay & Mechanics",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          672.1875,
+          61.171875
+        ],
+        [
+          938.4105834960938,
+          59.0625
+        ],
+        [
+          938.4105834960938,
+          86.484375
+        ],
+        [
+          672.1875,
+          88.59375
+        ]
+      ]
+    },
+    {
+      "title": "Switching Perspectives",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          785.625,
+          135.541748046875
+        ],
+        [
+          988.125,
+          133.9453125
+        ],
+        [
+          988.125,
+          153.541748046875
+        ],
+        [
+          785.625,
+          155.0390625
+        ]
+      ]
+    },
+    {
+      "title": "Resource Management",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          1470.0,
+          135.541748046875
+        ],
+        [
+          1671.3172607421875,
+          135.541748046875
+        ],
+        [
+          1671.3172607421875,
+          156.62109375
+        ],
+        [
+          1470.0,
+          158.73046875
+        ]
+      ]
+    },
+    {
+      "title": "Essence",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          1329.552490234375,
+          204.609375
+        ],
+        [
+          1404.375,
+          204.609375
+        ],
+        [
+          1400.625,
+          225.041748046875
+        ],
+        [
+          1329.375,
+          225.041748046875
+        ]
+      ]
+    },
+    {
+      "title": "Gold",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          1549.6875,
+          198.6417236328125
+        ],
+        [
+          1595.270751953125,
+          198.6417236328125
+        ],
+        [
+          1595.270751953125,
+          216.6417236328125
+        ],
+        [
+          1545.9375,
+          216.6417236328125
+        ]
+      ]
+    },
+    {
+      "title": "Situation >> busy day",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          672.1875,
+          897.1951446533203
+        ],
+        [
+          827.3358764648438,
+          895.4296875
+        ],
+        [
+          827.3358764648438,
+          911.1951446533203
+        ],
+        [
+          672.1875,
+          912.3046875
+        ]
+      ]
+    },
+    {
+      "title": "Gameplay & Mechanics",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          55.3125,
+          60.64453125
+        ],
+        [
+          321.7440490722656,
+          58.53515625
+        ],
+        [
+          321.7440490722656,
+          86.0556640625
+        ],
+        [
+          55.3125,
+          87.01171875
+        ]
+      ]
+    },
+    {
+      "title": "Greedy Strategy (take more orders)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          1486.9072265625,
+          204.80419921875
+        ],
+        [
+          1807.0731201171875,
+          204.609375
+        ],
+        [
+          1807.0731201171875,
+          223.59375
+        ],
+        [
+          1486.9072265625,
+          225.703125
+        ]
+      ]
+    },
+    {
+      "title": "Conservative Strategy (fewer orders)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          1482.3720703125,
+          408.69140625
+        ],
+        [
+          1811.5740966796875,
+          406.58203125
+        ],
+        [
+          1811.5740966796875,
+          428.49652099609375
+        ],
+        [
+          1481.25,
+          428.73046875
+        ]
+      ]
+    },
+    {
+      "title": "UI / UX Design",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.5625,
+          61.171875
+        ],
+        [
+          243.8400115966797,
+          59.0625
+        ],
+        [
+          243.8400115966797,
+          86.0556640625
+        ],
+        [
+          51.5625,
+          86.484375
+        ]
+      ]
+    },
+    {
+      "title": "UX Principles:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          272.8125,
+          783.10546875
+        ],
+        [
+          409.6875,
+          780.99609375
+        ],
+        [
+          409.6875,
+          802.7417297363281
+        ],
+        [
+          272.8125,
+          803.14453125
+        ]
+      ]
+    },
+    {
+      "title": "Witch Portrait & Sprite Recipe",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          889.108642578125,
+          134.47265625
+        ],
+        [
+          1850.1153564453125,
+          132.36328125
+        ],
+        [
+          1850.1153564453125,
+          153.541748046875
+        ],
+        [
+          886.875,
+          154.51171875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          659.0625,
+          62.2265625
+        ],
+        [
+          829.6875,
+          60.1171875
+        ],
+        [
+          825.9375,
+          85.4296875
+        ],
+        [
+          655.3125,
+          87.5390625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          485.625,
+          109.6875
+        ],
+        [
+          519.375,
+          109.6875
+        ],
+        [
+          515.625,
+          130.78125
+        ],
+        [
+          481.875,
+          130.78125
+        ]
+      ]
+    },
+    {
+      "title": "Visual Style Iteration",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          254.0625,
+          135.541748046875
+        ],
+        [
+          444.44879150390625,
+          133.9453125
+        ],
+        [
+          444.44879150390625,
+          153.541748046875
+        ],
+        [
+          250.3125,
+          155.0390625
+        ]
+      ]
+    },
+    {
+      "title": "Final Version Old Version",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          134.0625,
+          207.24609375
+        ],
+        [
+          548.752685546875,
+          205.13671875
+        ],
+        [
+          548.752685546875,
+          225.2908935546875
+        ],
+        [
+          134.0625,
+          225.2908935546875
+        ]
+      ]
+    },
+    {
+      "title": "Player Demographics:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          854.0625,
+          134.47265625
+        ],
+        [
+          1048.0035400390625,
+          132.36328125
+        ],
+        [
+          1048.0035400390625,
+          153.541748046875
+        ],
+        [
+          854.0625,
+          154.51171875
+        ]
+      ]
+    },
+    {
+      "title": "Player Demographics:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          856.875,
+          310.078125
+        ],
+        [
+          1048.125,
+          310.078125
+        ],
+        [
+          1048.125,
+          329.94171142578125
+        ],
+        [
+          856.875,
+          329.94171142578125
+        ]
+      ]
+    },
+    {
+      "title": "Game Accessibility:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          667.5,
+          466.69921875
+        ],
+        [
+          803.8154296875,
+          464.58984375
+        ],
+        [
+          803.8154296875,
+          481.59906005859375
+        ],
+        [
+          667.5,
+          482.51953125
+        ]
+      ]
+    },
+    {
+      "title": "Target Player AI Use of game balance design",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          670.6666259765625,
+          61.171875
+        ],
+        [
+          1655.625,
+          59.0625
+        ],
+        [
+          1655.625,
+          86.0556640625
+        ],
+        [
+          670.6666259765625,
+          86.484375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          138
+        ],
+        [
+          "Line",
+          66
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Picture",
+          7
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          115
+        ],
+        [
+          "Line",
+          54
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          53
+        ],
+        [
+          "Line",
+          24
+        ],
+        [
+          "Picture",
+          18
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          81
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Picture",
+          8
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\tulips"
+}

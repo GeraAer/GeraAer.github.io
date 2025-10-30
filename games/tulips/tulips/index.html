@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/Anne2.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="http://localhost:1313/games/tulips/tulips/">
+  <meta property="og:site_name" content="Jessica·Morningstar">
+  <meta property="og:title" content="Jessica·Morningstar">
+  <meta property="og:description" content="TULIPS Overview Tulips Café is a simulation game that merges elements of time management, resource management, and dual perspective game play.
+The game features two primary playable characters: Anne, the café owner who handles resources and strategy,
+Jessica, the waitress who manages orders, customer interactions, and dish preparations. The player switches between both characters to optimize the café’s operations while interacting with a diverse set of customer witches.
+Gameplay &amp; Mechanics Switching Perspectives The player can switch between Anne and Jessica. Each character has distinct responsibilities and tasks:">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="games">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jessica·Morningstar">
+  <meta name="twitter:description" content="TULIPS Overview Tulips Café is a simulation game that merges elements of time management, resource management, and dual perspective game play.
+The game features two primary playable characters: Anne, the café owner who handles resources and strategy,
+Jessica, the waitress who manages orders, customer interactions, and dish preparations. The player switches between both characters to optimize the café’s operations while interacting with a diverse set of customer witches.
+Gameplay &amp; Mechanics Switching Perspectives The player can switch between Anne and Jessica. Each character has distinct responsibilities and tasks:">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) ;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+
+
+
+
+<style>
+   
+
+  body.sf-page{
+    --text-color: #f5f5f5;
+    --text-secondary-color: #cfcfcf;
+
+     
+    --text-link-color: #d4af37;     
+    --primary-color:   #d4af37;     
+
+    --secondary-color: #b22222;     
+    --background-color: #000;
+    --secondary-background-color: #111;
+  }
+   
+  body.dark.sf-page{
+    --text-link-color: #ffd86b;
+    --primary-color:   #ffd86b;
+    --background-color: #0b0b0b;
+    --secondary-background-color: #121212;
+  }
+   
+body.sf-page .text-primary { 
+  color: var(--primary-color) !important; 
+}
+ 
+body.sf-page #single .title h1,
+body.sf-page #single .title h1 a,
+body.sf-page .title h1,
+body.sf-page .title h1 a,
+body.sf-page h1.post-title,
+body.sf-page h1.post-title a,
+body.sf-page .page-title,
+body.sf-page .article-title,
+body.sf-page .post-title,
+body.sf-page .post-title a,
+body.sf-page .title .text-primary,
+body.sf-page .post-title.text-primary {
+  color: var(--primary-color) !important;    
+  text-decoration: none !important;
+}
+
+ 
+body.sf-page .title h1,
+body.sf-page h1.post-title {
+  -webkit-text-fill-color: var(--primary-color) !important;
+  text-shadow: none !important;
+}
+ 
+body.sf-page #single .page-content h2,
+body.sf-page #single .page-content h3,
+body.sf-page #single .page-content h4,
+body.sf-page #single .page-content h5,
+body.sf-page #single .page-content h6,
+body.sf-page #single .post-content h2,
+body.sf-page #single .post-content h3,
+body.sf-page #single .post-content h4,
+body.sf-page #single .post-content h5,
+body.sf-page #single .post-content h6,
+body.sf-page .article-content h2,
+body.sf-page .article-content h3,
+body.sf-page .article-content h4,
+body.sf-page .article-content h5,
+body.sf-page .article-content h6,
+body.sf-page .markdown h2,
+body.sf-page .markdown h3,
+body.sf-page .markdown h4,
+body.sf-page .markdown h5,
+body.sf-page .markdown h6,
+body.sf-page .prose h2,
+body.sf-page .prose h3,
+body.sf-page .prose h4,
+body.sf-page .prose h5,
+body.sf-page .prose h6 {
+  color: var(--primary-color) !important;   
+}
+
+ 
+body.sf-page #single .page-content h2 a,
+body.sf-page #single .page-content h3 a,
+body.sf-page #single .page-content h4 a,
+body.sf-page #single .page-content h5 a,
+body.sf-page #single .page-content h6 a {
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+body.sf-page #single .page-content h2 a:hover,
+body.sf-page #single .page-content h3 a:hover,
+body.sf-page #single .page-content h4 a:hover,
+body.sf-page #single .page-content h5 a:hover,
+body.sf-page #single .page-content h6 a:hover {
+  color: var(--secondary-color) !important;  
+}
+
+ 
+ 
+body.sf-page .toc,
+body.sf-page .table-of-contents,
+body.sf-page nav#TableOfContents {
+  background: var(--secondary-background-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #333 !important;
+  border-radius: 12px;
+}
+
+ 
+body.sf-page .toc a,
+body.sf-page .table-of-contents a,
+body.sf-page nav#TableOfContents a,
+body.sf-page .toc .nav-link,
+body.sf-page .toc li > a {
+  color: var(--text-link-color) !important;   
+  text-decoration: none !important;
+}
+
+ 
+body.sf-page .toc a:hover,
+body.sf-page .table-of-contents a:hover,
+body.sf-page nav#TableOfContents a:hover,
+body.sf-page .toc .is-active-link > a,
+body.sf-page nav#TableOfContents .active > a {
+  color: var(--secondary-color) !important;  
+  border-color: var(--secondary-color) !important;
+}
+
+ 
+body.sf-page .toc li::marker,
+body.sf-page .table-of-contents li::marker {
+  color: var(--primary-color);
+}
+ 
+body.sf-page .tags,
+body.sf-page .tag-cloud,
+body.sf-page .widget-tags,
+body.sf-page .sidebar .tags,
+body.sf-page .sidebar .tag-cloud {
+  background: var(--secondary-background-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #333 !important;
+  border-radius: 12px;
+  padding: .75rem 1rem;
+}
+
+ 
+body.sf-page .tags a,
+body.sf-page .tag-cloud a,
+body.sf-page .widget-tags a,
+body.sf-page .sidebar .tags a,
+body.sf-page .sidebar .tag-cloud a,
+body.sf-page .tags .list-inline-item a {
+  color: var(--text-link-color) !important;      
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+body.sf-page .tags a:hover,
+body.sf-page .tag-cloud a:hover,
+body.sf-page .widget-tags a:hover,
+body.sf-page .sidebar .tags a:hover,
+body.sf-page .sidebar .tag-cloud a:hover,
+body.sf-page .tags .list-inline-item a:hover {
+  color: var(--secondary-color) !important;      
+  border-color: var(--secondary-color) !important;
+}
+
+ 
+body.sf-page .tags .badge,
+body.sf-page .tag-cloud .badge {
+  background: var(--secondary-background-color) !important;
+  color: var(--text-link-color) !important;
+  border: 1px solid #444 !important;
+}
+
+</style>
+<style>
+   
+  body.sf-page.bg-panorama{
+    background:
+      linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)) fixed,  
+      url("") center top / cover no-repeat fixed,
+      #000;  
+    background-attachment: fixed, fixed, scroll;  
+  }
+
+   
+  body.sf-page.bg-panorama #single{
+    max-width: 1200px; margin: 0 auto;
+    background: rgba(0,0,0,.92); padding: 2rem; border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0,0,0,.6);
+  }
+
+  @media (max-width: 1200px){
+    body.sf-page.bg-panorama #single{ border-radius: 0; padding: 1.25rem; }
+  }
+</style>
+
+
+
+
+
+
+
+  <meta name="description" content="">
+  
+
+  
+  <link rel="stylesheet" href="/css/games/base.css">
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+
+  <title> | Jessica·Morningstar
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg ">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/Anne2.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Morningstar Cafe
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/games" title="">
+                            
+                            Games
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/posts/" title="">
+                            
+                            Posts
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="">
+                            
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/info" title="">
+                            
+                            info
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/novel" title="">
+                            
+                            novel
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/tags/" title="">
+                            
+                            Tags
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/categories/" title="">
+                            
+                            Categories
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single" class="games-single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <header class="title mb-5">
+          <h1 class="text-center mb-3"></h1>
+          <div class="meta text-center">
+            
+            Jan 1, 0001
+          </div>
+        </header>
+
+        
+
+        <article class="page-content">
+          <h1 id="tulips">TULIPS</h1>
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>Tulips Café is a simulation game that merges elements of time management, resource management, and dual perspective game play.</p>
+<p><strong>The game features two primary playable characters:</strong> Anne, the café owner who handles resources and strategy,</p>
+<p>Jessica, the waitress who manages orders, customer interactions, and dish preparations. The player switches between both characters to optimize the café&rsquo;s operations while interacting with a diverse set of customer witches.</p>
+<p><img src="_page_0_Picture_5.jpeg" alt=""></p>
+<h1 id="gameplay--mechanics"><strong>Gameplay &amp; Mechanics</strong></h1>
+<h4 id="switching-perspectives"><strong>Switching Perspectives</strong></h4>
+<p>The player can switch between Anne and Jessica. Each character has distinct responsibilities and tasks:</p>
+<p><img src="_page_0_Picture_9.jpeg" alt=""></p>
+<p><strong><a href="https://geraaer.itch.io/tulips-cafe">Download</a></strong></p>
+<p><strong>Anne:</strong> Manages resources, unlock new dishes and researches recipes.</p>
+<p><strong>Jessica:</strong> Fulfill orders, serves dishes and interacts with customers.</p>
+<p><img src="_page_0_Picture_12.jpeg" alt=""></p>
+<p>The switch consumes Action Points(AP),which are limited each day. This mechanic forces players to prioritize tasks and make strategic decisions on when to switch between the characters.</p>
+<h2 id="resource-management"><strong>Resource Management</strong></h2>
+<h4 id="essence"><strong>Essence</strong></h4>
+<p>A magical resource used to unlock new recipes and upgrade the café&rsquo;s offerings.</p>
+<p><img src="_page_0_Picture_17.jpeg" alt=""></p>
+<h4 id="gold"><strong>Gold</strong></h4>
+<p>A m o r e m u n d a n e resource used for d a i l y p u r c h a s e s like Essence and upgrades.</p>
+<p><img src="_page_0_Picture_20.jpeg" alt=""></p>
+<p><strong>Reputation</strong> Gained by serving all the delivery orders</p>
+<p>and witches within</p>
+<p>today.</p>
+<p><img src="_page_0_Picture_22.jpeg" alt=""></p>
+<p><strong>Be careful:</strong> if you didn&rsquo;t able to(not enough ap complete all of the golem orders and witch orders by the day, your Rep will drop. This will make the player to balance between greedy strategy(accepting more orders to earn more money and save AP) and more conservative strategies. Players must balance these resources and Action Point, as Gold is earned from serving witches and completing golem delivery orders while Essence is used to unlock different cuisines and upgrade offerings.</p>
+<p><strong>Be aware</strong>, although it is a linear design that Essence can be crafted by gold. Certain kind of dishes require certain kind of Essence combined to be crafted. Let&rsquo;s say there&rsquo;s a magic taro pie requires 3x es3 and 4x es5, and there&rsquo;s a magic latte requires 2xes1 and 1x es3. With this combinations of dish-essence, player need to carefully consider when purchasing Ess, how to buy in order to serve more orders, and how to buy in order to minimize the number of perspective switches to reduce action point consumption. When making money, should they first upgrade dishes to unlock new customers, or should they first stockpile a large amount of Ess to save purchase time (AP) in the future?</p>
+<h4 id="situation"><strong>Situation &raquo; busy day</strong></h4>
+<p>This is a safe situation with enough Essence and 7 orders and 1 witch order(8 orders in total). If this player switch the view to Anne and accept more orders and back( -3 AP in total and 1 order increase),this will turn to a tricky issue. The player will have no other AP left to cope with another witch&rsquo;s arrival</p>
+<p><img src="_page_0_Picture_27.jpeg" alt=""></p>
+<h1 id="gameplay--mechanics-1"><strong>Gameplay &amp; Mechanics</strong></h1>
+<p><img src="_page_1_Figure_1.jpeg" alt=""></p>
+<h4 id="greedy-strategy-take-more-orders"><strong>Greedy Strategy (take more orders)</strong></h4>
+<p><strong>Pros:</strong> More Gold in short-term</p>
+<p><strong>Cons:</strong> Higher AP cost may fail orders Reputation loss</p>
+<h3 id="conservative-strategy-fewer-orders"><strong>Conservative Strategy (fewer orders)</strong></h3>
+<p><strong>Pros:</strong> Easier to manage AP, stable Rep</p>
+<p><strong>Cons:</strong> Less Gold growth, slower upgrades</p>
+<p><img src="_page_1_Picture_8.jpeg" alt=""></p>
+<h1 id="ui--ux-design"><strong>UI / UX Design</strong></h1>
+<p><img src="_page_2_Picture_1.jpeg" alt=""></p>
+<p>Controlling Jessica, player press E to interact with the bar, kitchen, Anne and customers.</p>
+<p><img src="_page_2_Picture_3.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_4.jpeg" alt=""></p>
+<p>Controlling Anne, player controls a static scene and panel to do the owner&rsquo;s job&mdash;- &ndash;tactics and strategy.</p>
+<p><img src="_page_2_Picture_6.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_7.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_8.jpeg" alt=""></p>
+<p>We have Icons like Jessica&rsquo;s memo and Menu. This can make players know the details more</p>
+<p>click the button to come back.</p>
+<h3 id="ux-principles"><strong>UX Principles:</strong></h3>
+<p><strong>Simplicity:</strong> The interface prioritizes easy navigation with a clean layout and minimal distractions. Only relevant information (e.g., resource counts, active tasks) is displayed at any given time.</p>
+<p><strong>Readability:</strong> Text is displayed in clear, legible fonts with contrasting backgrounds to ensure it&rsquo;s easy to read even in busy gameplay moments.</p>
+<p><strong>Responsive Design:</strong> The UI adapts to the switching of perspectives, with Anne&rsquo;s UI showing resource management tools and Jessica&rsquo;s UI focusing on orders and customer interactions.</p>
+<h3 id="witch-portrait--sprite-recipe"><strong>Witch Portrait &amp; Sprite Recipe</strong></h3>
+<p><img src="_page_2_Picture_15.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_16.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_17.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_18.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_19.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_21.jpeg" alt=""></p>
+<p><strong>It is really hard to remember all the orders..</strong></p>
+<p><img src="_page_2_Picture_23.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_24.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_25.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_26.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_27.jpeg" alt=""></p>
+<p><img src="_page_2_Picture_28.jpeg" alt=""></p>
+<h4 id="visual-style-iteration"><strong>Visual Style Iteration</strong></h4>
+<h4 id="final-version-old-version"><strong>Final Version Old Version</strong></h4>
+<p><img src="_page_3_Picture_5.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_6.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_7.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_8.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_9.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_10.jpeg" alt=""></p>
+<p><img src="_page_3_Picture_11.jpeg" alt=""></p>
+<h3 id="player-demographics"><strong>Player Demographics:</strong></h3>
+<p><strong>Age Range:</strong> 16–35 years old</p>
+<p><strong>Interests:</strong> Players interested in casual simulation games, resource management, and narrative-driven experiences.</p>
+<p><strong>Gaming Preferences:</strong> Ideal for players who enjoy games like Stardew Valley, Recettear, and Overcooked. The gameplay is easy to pick up,</p>
+<h4 id="player-demographics-1"><strong>Player Demographics:</strong></h4>
+<p><strong>Age Range:</strong> 16–35 years old</p>
+<p><strong>Interests:</strong> Players interested in casual simulation games, resource management, and narrative-driven experiences.</p>
+<p><strong>Gaming Preferences:</strong> Ideal for players who enjoy games like Stardew Valley, Recettear, and Overcooked. The gameplay is easy to pick up, but there&rsquo;s enough depth for players to optimize and strategize their operations.</p>
+<h4 id="game-accessibility"><strong>Game Accessibility:</strong></h4>
+<p>The game is designed to be accessible to both casual players and those seeking a deeper, more strategic experience. The dual-character system offers variety, and the AP limit system creates pacing that encourages decision-making/management</p>
+<p><img src="_page_3_Picture_22.jpeg" alt=""></p>
+<h1 id="target-player-ai-use-of-game-balance-design"><strong>Target Player AI Use of game balance design</strong></h1>
+<p>In the early development stages, a Python-based version of this game was built to emulate the core gameplay loops and optimize the game&rsquo;s parameters. This simulation ran thousands of test scenarios to determine ideal AP cost structures, resource balance, and customer interaction probabilities.</p>
+<p><strong>AI Playtesting:</strong> The AI was used to &ldquo;autoplay&rdquo; the game, making decisions about which recipes to unlock, when to switch characters, and how to allocate resources. By running these simulations, the development team gathered valuable insights on game balance.</p>
+<p>The use of AI allowed us to make data-driven decisions about the game&rsquo;s economy and mechanics, ensuring that the progression curve is challenging but fair for players. The AI simulations provided a foundation for future updates and expansions, allowing the design to evolve and scale.</p>
+<p>With the help of this magical numerical designer, Players are more likely to get into the Flow while playing our game.</p>
+<p><strong><a href="https://github.com/GeraAer/tulips-AI-tuning">Download</a></strong></p>
+
+        </article>
+      </div>
+
+      <aside class="col-lg-3 d-none d-lg-block games-sidebar">
+        
+        <div class="toc card">
+          <h5>Table Of Contents</h5>
+          <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview"><strong>Overview</strong></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#resource-management"><strong>Resource Management</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#conservative-strategy-fewer-orders"><strong>Conservative Strategy (fewer orders)</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#ux-principles"><strong>UX Principles:</strong></a></li>
+        <li><a href="#witch-portrait--sprite-recipe"><strong>Witch Portrait &amp; Sprite Recipe</strong></a></li>
+        <li><a href="#player-demographics"><strong>Player Demographics:</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+        </div>
+        
+        
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function(){
+    document.body.classList.add('games-page', 'game-skin');
+  });
+</script>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <a href="https://twitter.com" aria-label="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <path fill="#03a9f4"
+                d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
+            <path fill="#fff"
+                d="M36,17.12c-0.882,0.391-1.999,0.758-3,0.88c1.018-0.604,2.633-1.862,3-3 c-0.951,0.559-2.671,1.156-3.793,1.372C31.311,15.422,30.033,15,28.617,15C25.897,15,24,17.305,24,20v2c-4,0-7.9-3.047-10.327-6 c-0.427,0.721-0.667,1.565-0.667,2.457c0,1.819,1.671,3.665,2.994,4.543c-0.807-0.025-2.335-0.641-3-1c0,0.016,0,0.036,0,0.057 c0,2.367,1.661,3.974,3.912,4.422C16.501,26.592,16,27,14.072,27c0.626,1.935,3.773,2.958,5.928,3c-1.686,1.307-4.692,2-7,2 c-0.399,0-0.615,0.022-1-0.023C14.178,33.357,17.22,34,20,34c9.057,0,14-6.918,14-13.37c0-0.212-0.007-0.922-0.018-1.13 C34.95,18.818,35.342,18.104,36,17.12" />
+        </svg>
+    </a>
+    
+
+    
+    <a href="https://instagram.com" aria-label="instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fd5" />
+                <stop offset=".328" stop-color="#ff543f" />
+                <stop offset=".348" stop-color="#fc5245" />
+                <stop offset=".504" stop-color="#e64771" />
+                <stop offset=".643" stop-color="#d53e91" />
+                <stop offset=".761" stop-color="#cc39a4" />
+                <stop offset=".841" stop-color="#c837ab" />
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
+                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#4168c9" />
+                <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+            <path fill="#fff"
+                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
+            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
+            <path fill="#fff"
+                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
+        </svg>
+    </a>
+    
+
+    
+    <a href="https://facebook.com" aria-label="facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <path fill="#3F51B5"
+                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
+            <path fill="#FFF"
+                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z" />
+        </svg>
+    </a>
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="http://localhost:1313/" title="Jessica·Morningstar">
+                        <img alt="Footer logo" src="/Anne2.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
