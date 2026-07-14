@@ -74,10 +74,75 @@ body.game-themed #secondary-font {
   font-family: system-ui, "Segoe UI", "Noto Sans SC", "Helvetica Neue", sans-serif !important;
 }
 
-/* Theme single.css paints #single headings with cafe --text-link-color.
-   Themed pages remap those vars on body.*; keep cafe rose off themed pages. */
-body.game-themed #single .title > h1 {
+/* Theme single.css / header.css / Bootstrap .card use cafe :root tokens.
+   Themed pages remap vars on body.*; force chrome + single to honor them. */
+body.game-themed {
+  background: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+html:has(body.game-themed) {
+  background-color: var(--background-color, #111) !important;
+}
+body.game-themed #single .title h1,
+body.game-themed #single .title > h1,
+body.game-themed .games-single .title h1,
+body.game-themed .games-single h1,
+body.game-themed .games-single h2,
+body.game-themed .games-single h3,
+body.game-themed #single .page-content h1,
+body.game-themed #single .page-content h2,
+body.game-themed #single .page-content h3,
+body.game-themed #single .page-content h4,
+body.game-themed #single .page-content h5,
+body.game-themed #single .page-content h6 {
   opacity: 1;
+  color: var(--text-link-color) !important;
+  -webkit-text-fill-color: var(--text-link-color) !important;
+}
+body.game-themed #single .page-content a,
+body.game-themed .games-single a,
+body.game-themed .games-sidebar a,
+body.game-themed #TableOfContents a {
+  color: var(--text-link-color) !important;
+}
+body.game-themed .games-sidebar .card,
+body.game-themed .games-sidebar .toc,
+body.game-themed .games-sidebar .tags,
+body.game-themed #single .toc.card,
+body.game-themed #single .tags.card,
+body.game-themed #single aside.toc,
+body.game-themed #single aside.tags {
+  background: var(--secondary-background-color, var(--secondary-color)) !important;
+  color: var(--text-secondary-color, var(--text-color)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+body.game-themed .games-sidebar h5,
+body.game-themed #single aside h5,
+body.game-themed .toc h5,
+body.game-themed .tags h5 {
+  color: var(--text-link-color) !important;
+}
+body.game-themed #profileHeader .navbar,
+body.game-themed header .navbar {
+  background: color-mix(in srgb, var(--background-color) 88%, transparent) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+body.game-themed .navbar-brand,
+body.game-themed header .navbar .navbar-nav a,
+body.game-themed .navbar .nav-link {
+  color: var(--text-link-color) !important;
+}
+body.game-themed .navbar .nav-link:hover {
+  color: var(--primary-color) !important;
+  background: transparent !important;
+}
+body.game-themed footer {
+  background: var(--background-color) !important;
+  color: var(--text-secondary-color) !important;
+}
+body.game-themed footer a {
+  color: var(--text-link-color) !important;
 }
 
 #content, header, footer { position: relative; z-index: 1; }
@@ -465,6 +530,142 @@ body:not(.game-themed) footer {
 body:not(.game-themed) footer a { color: var(--ms-rose) !important; }
 .ms-footer-note { text-align: center; color: var(--ms-muted); font-size: 0.9rem; padding-bottom: 1.5rem; }
 .ms-footer-note .heart { color: var(--ms-rose); }
+
+/* ---- Mermaid readability ---- */
+body.game-themed {
+  --mmd-bg: #0b1220;
+  --mmd-node: #152848;
+  --mmd-stroke: #7be0c3;
+  --mmd-text: #eaf2ff;
+  --mmd-line: #7be0c3;
+  --mmd-edge-bg: #101a2c;
+}
+body.throng-page {
+  --mmd-bg: #0b1f1b;
+  --mmd-node: #14352f;
+  --mmd-stroke: #7be0c3;
+  --mmd-text: #eaf8ff;
+  --mmd-line: #52c7ea;
+  --mmd-edge-bg: #0e1f24;
+}
+body.tulips-page {
+  --mmd-bg: #1b1512;
+  --mmd-node: #2a221c;
+  --mmd-stroke: #c98a4b;
+  --mmd-text: #f4ede4;
+  --mmd-line: #c98a4b;
+  --mmd-edge-bg: #1b1512;
+}
+body.sf-page {
+  --mmd-bg: #1a1210;
+  --mmd-node: #241816;
+  --mmd-stroke: #c9a227;
+  --mmd-text: #e8c978;
+  --mmd-line: #b33a3a;
+  --mmd-edge-bg: #160f0d;
+}
+body.star-page {
+  --mmd-bg: #0b1020;
+  --mmd-node: #121a2e;
+  --mmd-stroke: #68f0c6;
+  --mmd-text: #e8f5ff;
+  --mmd-line: #4bd7ff;
+  --mmd-edge-bg: #0e1220;
+}
+
+body.game-themed .mermaid {
+  background: var(--mmd-bg) !important;
+  border: 1px solid var(--mmd-stroke) !important;
+  border-radius: 12px;
+  padding: 12px;
+}
+body.game-themed .mermaid .node rect,
+body.game-themed .mermaid .node circle,
+body.game-themed .mermaid .node ellipse,
+body.game-themed .mermaid .node polygon,
+body.game-themed .mermaid .node path,
+body.game-themed .mermaid .label-container,
+body.game-themed .mermaid .basic.label-container {
+  fill: var(--mmd-node) !important;
+  stroke: var(--mmd-stroke) !important;
+  stroke-width: 1.6px !important;
+}
+body.game-themed .mermaid text,
+body.game-themed .mermaid .label text,
+body.game-themed .mermaid .edgeLabel text,
+body.game-themed .mermaid .edgeLabel tspan,
+body.game-themed .mermaid tspan {
+  fill: var(--mmd-text) !important;
+  stroke: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+body.game-themed .mermaid .nodeLabel,
+body.game-themed .mermaid .edgeLabel,
+body.game-themed .mermaid .nodeLabel *,
+body.game-themed .mermaid .edgeLabel *,
+body.game-themed .mermaid foreignObject,
+body.game-themed .mermaid foreignObject div,
+body.game-themed .mermaid foreignObject span,
+body.game-themed .mermaid .flowchart-label,
+body.game-themed .mermaid .flowchart-label span {
+  color: var(--mmd-text) !important;
+  opacity: 1 !important;
+}
+body.game-themed .mermaid .edgePath .path,
+body.game-themed .mermaid .edgePath path,
+body.game-themed .mermaid path.path {
+  stroke: var(--mmd-line) !important;
+  stroke-width: 1.8px !important;
+  opacity: 1 !important;
+}
+body.game-themed .mermaid .arrowheadPath,
+body.game-themed .mermaid marker path {
+  fill: var(--mmd-line) !important;
+  stroke: var(--mmd-line) !important;
+  opacity: 1 !important;
+}
+body.game-themed .mermaid .edgeLabel rect,
+body.game-themed .mermaid .cluster rect {
+  fill: var(--mmd-edge-bg) !important;
+  stroke: var(--mmd-stroke) !important;
+}
+
+body:not(.game-themed) .mermaid {
+  background: #ffffff;
+  border: 1px solid rgba(59, 36, 54, 0.12);
+  border-radius: 10px;
+  padding: 12px;
+}
+body:not(.game-themed) .mermaid .node rect,
+body:not(.game-themed) .mermaid .node polygon,
+body:not(.game-themed) .mermaid .label-container {
+  fill: #f3e8ff !important;
+  stroke: #8b5cf6 !important;
+  stroke-width: 1.5px !important;
+}
+body:not(.game-themed) .mermaid text,
+body:not(.game-themed) .mermaid .label text,
+body:not(.game-themed) .mermaid tspan {
+  fill: #2a1a33 !important;
+}
+body:not(.game-themed) .mermaid .nodeLabel,
+body:not(.game-themed) .mermaid .edgeLabel,
+body:not(.game-themed) .mermaid foreignObject,
+body:not(.game-themed) .mermaid foreignObject div,
+body:not(.game-themed) .mermaid foreignObject span {
+  color: #2a1a33 !important;
+}
+body:not(.game-themed) .mermaid .edgePath .path,
+body:not(.game-themed) .mermaid path.path {
+  stroke: #7a5a68 !important;
+  stroke-width: 1.6px !important;
+}
+body:not(.game-themed) .mermaid .arrowheadPath,
+body:not(.game-themed) .mermaid marker path {
+  fill: #7a5a68 !important;
+  stroke: #7a5a68 !important;
+}
 
 #hero .hero-bottom-svg { display: none !important; }
 

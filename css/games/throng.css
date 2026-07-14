@@ -1,0 +1,226 @@
+/* Throng: Evolution — teal / aqua theme (loaded in <head> via skin) */
+body.throng-page {
+  --thr-text: #eaf8ff;
+  --thr-muted: #bfe7f0;
+  --thr-accent: #7be0c3;
+  --thr-accent-2: #52c7ea;
+  --thr-bg: #081418;
+  --thr-card: #0e1f24;
+  --thr-border: #17323a;
+
+  /* Theme / cafe tokens (header.css, footer, single) */
+  --text-color: var(--thr-text);
+  --text-secondary-color: var(--thr-muted);
+  --text-link-color: var(--thr-accent);
+  --primary-color: var(--thr-accent-2);
+  --secondary-color: var(--thr-card);
+  --background-color: var(--thr-bg);
+  --secondary-background-color: var(--thr-card);
+
+  /* games/base.css tokens */
+  --bg: var(--thr-bg);
+  --fg: var(--thr-text);
+  --card: var(--thr-card);
+  --muted: var(--thr-border);
+  --link: var(--thr-accent-2);
+  --accent: var(--thr-accent);
+
+  color: var(--thr-text) !important;
+  background: var(--thr-bg) !important;
+  font-family: "Segoe UI", "Noto Sans SC", system-ui, sans-serif !important;
+}
+
+html:has(body.throng-page) {
+  background-color: var(--thr-bg, #081418) !important;
+}
+
+/* Nav — beat header.css cafe rose via remapped vars + explicit aqua */
+body.throng-page #profileHeader .navbar,
+body.throng-page header .navbar {
+  background: rgba(8, 20, 24, 0.92) !important;
+  border-bottom: 1px solid var(--thr-border) !important;
+  backdrop-filter: blur(10px);
+}
+body.throng-page .navbar-brand,
+body.throng-page header .navbar .navbar-nav a,
+body.throng-page .navbar .nav-link {
+  color: var(--thr-accent-2) !important;
+}
+body.throng-page .navbar .nav-link:hover,
+body.throng-page .navbar-brand:hover {
+  color: var(--thr-accent) !important;
+}
+body.throng-page #search,
+body.throng-page input#search {
+  background: var(--thr-card) !important;
+  color: var(--thr-text) !important;
+  border: 1px solid var(--thr-border) !important;
+}
+
+/* Titles — beat .games-single h1 { color: var(--link) } and any cafe leftovers */
+body.throng-page #single .title h1,
+body.throng-page #single .title > h1,
+body.throng-page .games-single .title h1,
+body.throng-page .games-single h1,
+body.throng-page .games-single h2,
+body.throng-page .games-single h3,
+body.throng-page #single .page-content h1,
+body.throng-page #single .page-content h2,
+body.throng-page #single .page-content h3,
+body.throng-page #single .page-content h4,
+body.throng-page #single .page-content h5,
+body.throng-page #single .page-content h6,
+body.throng-page h1,
+body.throng-page h2 {
+  color: var(--thr-accent) !important;
+  -webkit-text-fill-color: var(--thr-accent) !important;
+  font-family: "Segoe UI", "Noto Sans SC", system-ui, sans-serif !important;
+}
+body.throng-page h3,
+body.throng-page h4 {
+  color: var(--thr-accent-2) !important;
+  -webkit-text-fill-color: var(--thr-accent-2) !important;
+}
+
+/* Main content surface */
+body.throng-page #single.games-single,
+body.throng-page .games-single .page-content {
+  background: rgba(8, 20, 24, 0.92) !important;
+  color: var(--thr-text) !important;
+  border: 1px solid var(--thr-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+body.throng-page .games-single .page-content {
+  padding: 1.5rem 1.75rem;
+}
+
+/* Links */
+body.throng-page #single a,
+body.throng-page .games-single a,
+body.throng-page .games-sidebar a {
+  color: var(--thr-accent-2) !important;
+  text-decoration: none;
+}
+body.throng-page #single a:hover,
+body.throng-page .games-single a:hover,
+body.throng-page .games-sidebar a:hover {
+  color: var(--thr-accent) !important;
+}
+
+/* TOC / Tags sidebar — match real DOM: .games-sidebar .toc.card / .tags.card */
+body.throng-page .games-sidebar .card,
+body.throng-page .games-sidebar .toc,
+body.throng-page .games-sidebar .tags,
+body.throng-page #single .toc.card,
+body.throng-page #single .tags.card,
+body.throng-page .card {
+  background: var(--thr-card) !important;
+  border: 1px solid var(--thr-border) !important;
+  color: var(--thr-muted) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+body.throng-page .games-sidebar h5,
+body.throng-page .toc h5,
+body.throng-page .tags h5 {
+  color: var(--thr-accent) !important;
+}
+body.throng-page .games-sidebar .toc a,
+body.throng-page .games-sidebar .tags a,
+body.throng-page #TableOfContents a {
+  color: var(--thr-accent-2) !important;
+}
+body.throng-page .games-sidebar .toc a:hover,
+body.throng-page .games-sidebar .tags a:hover,
+body.throng-page #TableOfContents a:hover {
+  color: var(--thr-accent) !important;
+}
+
+/* Fold / quotes / code / tables */
+body.throng-page details,
+body.throng-page .fold,
+body.throng-page .fold-block {
+  background: rgba(14, 31, 36, 0.7) !important;
+  border: 1px solid var(--thr-border) !important;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+body.throng-page summary {
+  color: var(--thr-accent) !important;
+  cursor: pointer;
+}
+body.throng-page blockquote {
+  border-left: 3px solid var(--thr-accent-2) !important;
+  color: var(--thr-muted) !important;
+  background: rgba(14, 31, 36, 0.55) !important;
+}
+body.throng-page pre,
+body.throng-page code {
+  background: #0b171b !important;
+  color: #e8f7ff !important;
+  border: 1px solid var(--thr-border);
+}
+body.throng-page table {
+  background-color: #0b1f1b !important;
+  border-collapse: collapse;
+  border: 1px solid var(--thr-border);
+}
+body.throng-page th {
+  background-color: #123c35 !important;
+  color: var(--thr-accent) !important;
+  border: 1px solid var(--thr-border);
+  padding: 8px 10px;
+}
+body.throng-page td {
+  background-color: rgba(11, 31, 27, 0.9) !important;
+  color: var(--thr-text) !important;
+  border: 1px solid var(--thr-border);
+  padding: 8px 10px;
+}
+body.throng-page tr:nth-child(even) td {
+  background-color: rgba(10, 26, 22, 0.8) !important;
+}
+
+/* Mermaid */
+body.throng-page .mermaid {
+  background: #0b1f1b !important;
+  border: 1px solid var(--thr-border) !important;
+  border-radius: 10px;
+  padding: 12px;
+}
+body.throng-page .mermaid text,
+body.throng-page .mermaid .label,
+body.throng-page .mermaid .label text,
+body.throng-page .mermaid .edgeLabel text {
+  fill: #eaf8ff !important;
+  stroke: none !important;
+}
+body.throng-page .mermaid .nodeLabel,
+body.throng-page .mermaid .edgeLabel,
+body.throng-page .mermaid .nodeLabel > *,
+body.throng-page .mermaid .edgeLabel > *,
+body.throng-page .mermaid foreignObject,
+body.throng-page .mermaid foreignObject div,
+body.throng-page .mermaid foreignObject span,
+body.throng-page .mermaid .flowchart-label,
+body.throng-page .mermaid .flowchart-label span {
+  color: #eaf8ff !important;
+}
+
+/* Footer */
+body.throng-page footer {
+  background: var(--thr-bg) !important;
+  color: var(--thr-muted) !important;
+  border-top: 1px solid var(--thr-border) !important;
+}
+body.throng-page footer a {
+  color: var(--thr-accent-2) !important;
+}
+
+@media (max-width: 992px) {
+  body.throng-page .games-single .page-content {
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+}

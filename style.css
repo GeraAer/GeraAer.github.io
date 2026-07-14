@@ -1,2 +1,3 @@
-/* Morningstar Cafe entry — loaded via params.customCSS */
-@import url("/css/morningstar.css");
+/* Morningstar Cafe — entry stylesheet (params.customCSS).
+   morningstar.css is already loaded via layouts/partials/head/extensions.html.
+   Keep this file for site-wide extras that must load last; do NOT @import morningstar again. */

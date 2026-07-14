@@ -1,11 +1,11 @@
-/* 变量：默认留空白，交给各 skin 覆盖 */
+/* 变量：默认中性深色；各 skin（throng/sf/star…）在 body.*-page 上覆盖 */
 :root{
   --bg: #111;
   --fg: #eee;
   --card: rgba(0,0,0,.6);
   --muted: rgba(255,255,255,.08);
   --link: #4da3ff;
-  --accent: #ff5577;
+  --accent: #7ec8b8; /* was #ff5577 — never use cafe-rose as game default */
 }
 
 /* 基础布局与文字 */
@@ -23,13 +23,20 @@ body.games-page{
   color: var(--link);
 }
 
-/* 侧栏/卡片/TOC */
-.games-sidebar .card, .games-single .toc.card{
+/* 侧栏/卡片/TOC/Tags */
+.games-sidebar .card,
+.games-single .toc.card,
+.games-single .tags.card{
   background: var(--card);
   border: 1px solid var(--muted);
   color: var(--fg);
   border-radius: 12px;
   padding: .75rem 1rem;
+}
+.games-sidebar .card a,
+.games-single .toc a,
+.games-single .tags a{
+  color: var(--link);
 }
 .games-single a{ color: var(--link); }
 .games-single a:hover{ color: var(--accent); }
