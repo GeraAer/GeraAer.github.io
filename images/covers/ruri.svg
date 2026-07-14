@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ruri Empress cover">
+  <defs>
+    <linearGradient id="court" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1840"/>
+      <stop offset="45%" stop-color="#5a2d5e"/>
+      <stop offset="100%" stop-color="#d4a0b8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#f6e7c8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f6e7c8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#court)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <path d="M400 90 L430 170 L515 170 L448 220 L472 305 L400 255 L328 305 L352 220 L285 170 L370 170 Z" fill="#f3d9a4" opacity="0.85"/>
+  <rect x="180" y="360" width="440" height="12" rx="6" fill="#f3d9a4" opacity="0.35"/>
+  <rect x="220" y="390" width="360" height="8" rx="4" fill="#f3d9a4" opacity="0.22"/>
+  <text x="48" y="430" font-family="Georgia, serif" font-size="40" fill="#fff6ea">	Ésá</text>
+  <text x="50" y="468" font-family="Georgia, serif" font-size="18" fill="#f0d4e2">Ruri Empress ∑ f·S~ ADV</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Lastrip cover">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="55%" stop-color="#3d4f78"/>
+      <stop offset="100%" stop-color="#f2c7d4"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2f3a"/>
+      <stop offset="100%" stop-color="#1a1d24"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="620" cy="120" r="54" fill="#ffe8c8" opacity="0.9"/>
+  <circle cx="620" cy="120" r="78" fill="#ffe8c8" opacity="0.15"/>
+  <path d="M0 320 Q200 280 400 310 T800 290 L800 500 L0 500 Z" fill="#dfe7f2" opacity="0.35"/>
+  <path d="M0 360 Q220 330 420 355 T800 340 L800 500 L0 500 Z" fill="#c9d4e6" opacity="0.5"/>
+  <path d="M280 500 L400 300 L520 500 Z" fill="url(#road)"/>
+  <path d="M395 320 L405 320 L408 500 L392 500 Z" fill="#f7d7a8" opacity="0.55"/>
+  <text x="48" y="78" font-family="Georgia, serif" font-size="42" fill="#fff5f8" letter-spacing="4">LASTRIP</text>
+  <text x="50" y="112" font-family="Georgia, serif" font-size="18" fill="#ffd0dd">+lï · ~ÆÉô</text>
+</svg>

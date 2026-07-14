@@ -1,0 +1,469 @@
+/* Morningstar Cafe — soft rose portfolio skin
+   IMPORTANT: cafe chrome must NOT override per-game themed pages.
+   Themed pages set body.game-themed (+ throng-page / tulips-page / etc.)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=ZCOOL+XiaoWei&display=swap');
+
+:root {
+  --ms-ink: #3B2436;
+  --ms-muted: #7A5A68;
+  --ms-rose: #E85A7A;
+  --ms-rose-deep: #C44569;
+  --ms-blush: #FFE4EC;
+  --ms-cream: #FFF7FA;
+  --ms-petal: #FFB7C5;
+  --ms-mint: #7EC8B8;
+  --ms-star: #E8B86D;
+  --ms-card: rgba(255, 255, 255, 0.72);
+  --ms-shadow: 0 18px 40px rgba(200, 80, 120, 0.12);
+  --ms-radius: 1.35rem;
+  --font-display: "Fredoka", "ZCOOL XiaoWei", "Noto Sans SC", sans-serif;
+  --font-body: "Noto Sans SC", "Fredoka", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+/* ===== Cafe chrome: ONLY when not a themed game page ===== */
+body:not(.game-themed).light,
+body:not(.game-themed) {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #ffd6e4 0%, transparent 55%),
+    radial-gradient(ellipse 70% 45% at 95% 5%, #ffe8c8 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, #d9f2ec 0%, transparent 55%),
+    var(--ms-cream) !important;
+  color: var(--ms-ink) !important;
+  font-family: var(--font-body) !important;
+}
+
+body:not(.game-themed) #primary-font,
+body:not(.game-themed) .primary-font,
+body:not(.game-themed) .navbar-brand,
+body:not(.game-themed) h1,
+body:not(.game-themed) h2,
+body:not(.game-themed) h3,
+body:not(.game-themed) h4,
+body:not(.game-themed) h5,
+body:not(.game-themed) .ms-brand,
+body:not(.game-themed) .ms-display {
+  font-family: var(--font-display) !important;
+}
+
+body:not(.game-themed)::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.45;
+  background-image:
+    radial-gradient(2px 2px at 12% 22%, var(--ms-star), transparent),
+    radial-gradient(2px 2px at 78% 18%, var(--ms-petal), transparent),
+    radial-gradient(1.5px 1.5px at 34% 68%, var(--ms-mint), transparent),
+    radial-gradient(2px 2px at 88% 72%, var(--ms-rose), transparent),
+    radial-gradient(1.5px 1.5px at 55% 40%, #fff, transparent);
+  animation: ms-twinkle 7s ease-in-out infinite alternate;
+}
+
+body.game-themed::before { display: none !important; content: none !important; }
+
+#content, header, footer { position: relative; z-index: 1; }
+
+@keyframes ms-twinkle {
+  from { opacity: 0.28; transform: translateY(0); }
+  to { opacity: 0.55; transform: translateY(-6px); }
+}
+@keyframes ms-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ms-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Navbar — cafe pages */
+body:not(.game-themed) #profileHeader .navbar {
+  background: rgba(255, 247, 250, 0.72) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(232, 90, 122, 0.12);
+}
+body:not(.game-themed) #profileHeader.showHeaderOnTop .navbar {
+  box-shadow: 0 8px 24px rgba(200, 80, 120, 0.1);
+}
+body:not(.game-themed) .navbar-brand {
+  color: var(--ms-rose-deep) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+}
+body:not(.game-themed) .navbar-brand img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ms-petal);
+}
+body:not(.game-themed) .nav-link {
+  color: var(--ms-muted) !important;
+  font-weight: 500 !important;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem !important;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+body:not(.game-themed) .nav-link:hover {
+  color: var(--ms-rose-deep) !important;
+  background: var(--ms-blush);
+  transform: translateY(-1px);
+}
+body:not(.game-themed) #search,
+body:not(.game-themed) input#search {
+  border-radius: 999px !important;
+  border: 1.5px solid rgba(232, 90, 122, 0.25) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: var(--ms-ink) !important;
+}
+
+/* Language switcher */
+.ms-lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.35rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(232, 90, 122, 0.2);
+}
+.ms-lang-switch a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  color: var(--ms-muted) !important;
+}
+.ms-lang-switch a.active,
+.ms-lang-switch a:hover {
+  background: var(--ms-blush);
+  color: var(--ms-rose-deep) !important;
+}
+body.game-themed .ms-lang-switch {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.2);
+}
+body.game-themed .ms-lang-switch a { color: rgba(255,255,255,0.75) !important; }
+body.game-themed .ms-lang-switch a.active,
+body.game-themed .ms-lang-switch a:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff !important;
+}
+
+/* Buttons — cafe only */
+body:not(.game-themed) .btn,
+body:not(.game-themed) a.btn {
+  border-radius: 999px !important;
+  border: 2px solid var(--ms-rose) !important;
+  color: var(--ms-rose-deep) !important;
+  background: linear-gradient(180deg, #fff, var(--ms-blush)) !important;
+  font-weight: 600 !important;
+  padding: 0.55rem 1.35rem !important;
+  box-shadow: 0 8px 18px rgba(232, 90, 122, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
+}
+body:not(.game-themed) .btn:hover,
+body:not(.game-themed) a.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(232, 90, 122, 0.22);
+  background: linear-gradient(180deg, var(--ms-blush), #ffd0dc) !important;
+  color: var(--ms-rose-deep) !important;
+}
+
+/* Hero / sections / works — unchanged cafe components */
+#hero.ms-hero {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  padding: 3.5rem 0 4rem !important;
+  overflow: hidden;
+}
+.ms-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+  animation: ms-rise 0.8s ease both;
+}
+.ms-kicker {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--ms-rose);
+  background: var(--ms-blush);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.ms-hero h1 {
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  line-height: 1.12;
+  color: var(--ms-ink);
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+}
+.ms-hero h1 .star {
+  color: var(--ms-star);
+  display: inline-block;
+  font-size: 0.72em;
+  line-height: 1;
+  animation: ms-float 3.2s ease-in-out infinite;
+}
+.ms-hero .ms-name {
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  color: var(--ms-rose-deep);
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+.ms-hero .ms-studio {
+  font-size: 0.95rem;
+  color: var(--ms-muted);
+  margin-bottom: 1rem;
+}
+.ms-hero .ms-lead {
+  font-size: 1.08rem;
+  color: var(--ms-muted);
+  max-width: 36rem;
+  margin-bottom: 1.6rem;
+}
+.ms-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+}
+.ms-social a {
+  display: inline-flex;
+  width: 2.6rem;
+  height: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ms-rose) !important;
+  border: 1.5px solid rgba(232, 90, 122, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.ms-social a:hover {
+  transform: translateY(-3px) rotate(-6deg);
+  background: var(--ms-blush);
+}
+.ms-hero-portrait {
+  position: relative;
+  justify-self: center;
+  animation: ms-float 4.5s ease-in-out infinite;
+}
+.ms-hero-portrait img {
+  width: min(320px, 72vw);
+  height: min(320px, 72vw);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 0 0 8px var(--ms-blush), 0 24px 48px rgba(200, 80, 120, 0.22);
+}
+.ms-hero-portrait::after {
+  content: "★";
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  font-size: 1.6rem;
+  color: var(--ms-star);
+  animation: ms-float 2.8s ease-in-out infinite reverse;
+}
+.ms-hero-portrait::before {
+  content: "♡";
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  font-size: 1.4rem;
+  color: var(--ms-rose);
+  animation: ms-float 3.4s ease-in-out infinite;
+}
+
+.ms-section { padding: 4.5rem 0; animation: ms-rise 0.7s ease both; }
+.ms-section-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: var(--ms-ink);
+  margin-bottom: 0.5rem;
+}
+.ms-section-sub {
+  text-align: center;
+  color: var(--ms-muted);
+  margin-bottom: 2.5rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ms-section-title .dot { color: var(--ms-rose); }
+
+.ms-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.35rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.ms-work {
+  display: flex;
+  flex-direction: column;
+  background: var(--ms-card);
+  border: 1px solid rgba(232, 90, 122, 0.14);
+  border-radius: var(--ms-radius);
+  overflow: hidden;
+  box-shadow: var(--ms-shadow);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+.ms-work:hover {
+  transform: translateY(-8px) rotate(-0.4deg);
+  box-shadow: 0 24px 48px rgba(200, 80, 120, 0.2);
+}
+.ms-work-cover {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ms-blush), #ffe8c8);
+}
+.ms-work-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.ms-work:hover .ms-work-cover img { transform: scale(1.06); }
+.ms-work-body {
+  padding: 1.1rem 1.15rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+.ms-badges { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.ms-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ms-rose-deep);
+  background: var(--ms-blush);
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+}
+.ms-work-title { font-size: 1.15rem; font-weight: 600; margin: 0; color: var(--ms-ink); }
+.ms-work-desc { font-size: 0.92rem; color: var(--ms-muted); margin: 0; line-height: 1.55; }
+.ms-work-cta { margin-top: auto; padding-top: 0.65rem; font-size: 0.88rem; font-weight: 600; color: var(--ms-rose); }
+
+.ms-about-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+.ms-about-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  border: 5px solid #fff;
+  box-shadow: var(--ms-shadow);
+  transform: rotate(-2deg);
+}
+.ms-about-content {
+  background: var(--ms-card);
+  border-radius: var(--ms-radius);
+  padding: 1.6rem 1.75rem;
+  border: 1px solid rgba(232, 90, 122, 0.12);
+  box-shadow: var(--ms-shadow);
+}
+.ms-skills {
+  list-style: none;
+  padding: 0;
+  margin: 1.1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.ms-skills li {
+  background: linear-gradient(180deg, #fff, #e8f8f3);
+  border: 1.5px solid rgba(126, 200, 184, 0.45);
+  color: #2f6b5f;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.ms-skills-label { color: var(--ms-muted); margin-top: 1.25rem; margin-bottom: 0.35rem; font-size: 0.95rem; }
+
+.ms-contact { text-align: center; max-width: 640px; margin: 0 auto; padding: 0 1.25rem; }
+.ms-contact-card {
+  background: linear-gradient(160deg, #fff 0%, var(--ms-blush) 100%);
+  border-radius: 2rem;
+  padding: 2.4rem 1.8rem;
+  border: 1px solid rgba(232, 90, 122, 0.18);
+  box-shadow: var(--ms-shadow);
+}
+
+#list-page.ms-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 2.5rem !important;
+  padding-bottom: 3rem;
+}
+.ms-list-sub { text-align: center; color: var(--ms-muted); margin-bottom: 2rem; }
+#list-page .ms-works-grid { padding: 0; }
+
+.ms-novel-list { max-width: 720px; margin: 2rem auto 3rem; padding: 0 1.25rem; }
+.ms-novel-list h1 { text-align: center; margin-bottom: 1.5rem; }
+.ms-novel-list ul { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+.ms-novel-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: var(--ms-card);
+  border-radius: 1rem;
+  border: 1px solid rgba(232, 90, 122, 0.14);
+  color: var(--ms-ink) !important;
+  text-decoration: none !important;
+  box-shadow: var(--ms-shadow);
+  transition: transform 0.2s ease;
+}
+.ms-novel-list a:hover { transform: translateX(6px); color: var(--ms-rose-deep) !important; }
+
+body:not(.game-themed) footer {
+  background: transparent !important;
+  border-top: 1px solid rgba(232, 90, 122, 0.12);
+  margin-top: 2rem;
+}
+body:not(.game-themed) footer a { color: var(--ms-rose) !important; }
+.ms-footer-note { text-align: center; color: var(--ms-muted); font-size: 0.9rem; padding-bottom: 1.5rem; }
+.ms-footer-note .heart { color: var(--ms-rose); }
+
+#hero .hero-bottom-svg { display: none !important; }
+
+@media (max-width: 992px) {
+  .ms-hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .ms-hero .ms-lead { margin-left: auto; margin-right: auto; }
+  .ms-hero-actions { justify-content: center; }
+  .ms-works-grid { grid-template-columns: repeat(2, 1fr); }
+  .ms-about-wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .ms-skills { justify-content: center; }
+}
+@media (max-width: 640px) {
+  .ms-works-grid { grid-template-columns: 1fr; }
+  #hero.ms-hero { min-height: auto; padding-top: 2rem !important; }
+}
