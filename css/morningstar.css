@@ -67,6 +67,19 @@ body:not(.game-themed)::before {
 
 body.game-themed::before { display: none !important; content: none !important; }
 
+/* Kill theme font.css Lora !important on themed game pages — page CSS owns type */
+body.game-themed,
+body.game-themed .secondary-font,
+body.game-themed #secondary-font {
+  font-family: system-ui, "Segoe UI", "Noto Sans SC", "Helvetica Neue", sans-serif !important;
+}
+
+/* Theme single.css paints #single headings with cafe --text-link-color.
+   Themed pages remap those vars on body.*; keep cafe rose off themed pages. */
+body.game-themed #single .title > h1 {
+  opacity: 1;
+}
+
 #content, header, footer { position: relative; z-index: 1; }
 
 @keyframes ms-twinkle {
