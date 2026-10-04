@@ -1,0 +1,78 @@
+@font-face{font-family:LastripCourier;src:url('/fonts/lastrip/CourierPrime-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+html.lastrip-site{background:#0b1420;scroll-behavior:smooth;scroll-padding-top:30px}
+html.lastrip-site body{background:#0b1420!important;color:#e6e9e9!important;font-family:LastripCourier,"LXGW WenKai","KaiTi","STKaiti",serif!important}
+html.lastrip-site body::before,html.lastrip-site #profileHeader,html.lastrip-site body>#content+footer,html.lastrip-site #search-content{display:none!important}
+html.lastrip-site #content{padding:0!important;margin:0!important;max-width:none!important}
+.ls-page{overflow:clip;font-size:16px;line-height:1.8;background:#0b1420}
+.ls-page *,.ls-page *::before,.ls-page *::after{box-sizing:border-box}
+.ls-page h1,.ls-page h2,.ls-page p,.ls-page figure,.ls-page dl{margin:0}
+.ls-page h1,.ls-page h2{font-family:inherit!important;font-weight:400!important;color:inherit!important}
+.ls-page a{color:inherit!important;text-decoration:none!important}
+.ls-page a:focus-visible,.ls-page button:focus-visible{outline:2px solid #e6c194;outline-offset:6px}
+.ls-page button{font-family:inherit;cursor:pointer}
+.ls-page img{display:block;max-width:100%;height:auto}
+.ls-wrap{width:min(1120px,calc(100% - 100px));margin-inline:auto}
+.ls-hero{position:relative;isolation:isolate;height:min(980px,100svh);min-height:740px;background:#344960}
+.ls-hero-landscape{position:absolute;inset:0;z-index:-3;background:url('/images/lastrip/snow-shanghai.webp') center 47%/cover no-repeat}
+.ls-hero-landscape::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,36,.93) 0%,rgba(12,25,41,.76) 28%,rgba(17,33,50,.18) 62%,rgba(27,43,56,.12)),linear-gradient(0deg,#0b1420,transparent 28%,transparent 85%,rgba(13,26,39,.44))}
+.ls-hero-pair{position:absolute;z-index:-1;width:min(1320px,98vw);max-width:none!important;right:-12%;bottom:-4%;filter:drop-shadow(0 16px 32px #0b17254d);mask-image:linear-gradient(#000 80%,transparent 100%);pointer-events:none}
+.ls-menu-frame{position:absolute;inset:8px 1.5% auto;width:97%;height:109%!important;max-width:none!important;object-fit:fill;z-index:2;opacity:.7;pointer-events:none}
+.ls-nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:40px 6%;font-size:13px;letter-spacing:.02em;color:#e3e8eb}
+.ls-nav a{transition:color .18s}.ls-nav a:hover{color:#e8c6a0!important}
+.ls-nav-right{display:flex;align-items:center;gap:26px}
+.ls-nav-divider{height:14px;border-left:1px solid #b4becf66;margin-inline:2px}
+.ls-language{opacity:.6}.ls-language.is-current{opacity:1;border-bottom:1px solid #dfc1a0}
+.ls-identity{position:relative;padding:clamp(38px,7vh,95px) 0 0;margin-left:10%;width:36%;max-width:470px;z-index:1}
+.ls-studio{font-size:11px;letter-spacing:.3em;color:#cbd7df}
+.ls-identity h1{margin:15px -24px 0!important;width:calc(100% + 35px)}
+.ls-identity h1 img{width:100%;height:auto}
+.ls-subtitle{font-size:13px;letter-spacing:.14em;color:#c8d6df;margin-top:-8px!important}
+.ls-tagline{font-size:20px;line-height:1.8;white-space:pre-line;color:#f2e3cf;margin-top:26px!important;text-shadow:0 2px 12px #0b1525}
+.ls-hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:31px}
+.ls-choice{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:50px;width:min(330px,100%);padding:10px 25px 10px 53px;background:url('/images/lastrip/choice_idle_background.png') center/100% 100% no-repeat;border:0;font-size:15px;letter-spacing:.02em;color:#f0ece5!important;transition:filter .2s,transform .2s}
+.ls-choice:hover{background-image:url('/images/lastrip/choice_hover_background.png');filter:brightness(1.2);transform:translateX(5px)}
+.ls-choice span{color:#dcc4a6;font-size:18px}
+.ls-development{font-size:11px;letter-spacing:.06em;color:#c2ccd3;margin-top:22px!important}
+.ls-development span{padding-inline:5px;color:#8999a8}
+.ls-hero-foot{position:absolute;bottom:33px;inset-inline:6%;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.17em;color:#c1ccd7;z-index:3}
+.ls-hero-foot>span:first-child{display:flex;align-items:center;gap:14px}.ls-route-line{display:block;width:50px;height:1px;background:#adbbc6}.ls-hero-foot>a{font-size:24px;line-height:1;padding:8px 20px}
+.ls-kicker{font-size:11px;letter-spacing:.2em;color:#a8b9c8;margin-bottom:12px!important}
+.ls-page h2{font-size:29px;letter-spacing:.04em;line-height:1.5}
+.ls-film{position:relative;padding:86px 0 68px;background:linear-gradient(#0b1420c9,#0b1420 90%),url('/images/lastrip/title-snow.webp') center top/cover no-repeat}
+.ls-film-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:50px;margin-bottom:31px}
+.ls-synopsis{max-width:540px;white-space:pre-line;font-size:17px;color:#bfc9d0;line-height:1.9}
+.ls-video-shell{position:relative;background:#050a10;box-shadow:0 22px 60px #0005;border:1px solid #929eac55;aspect-ratio:16/9}
+.ls-video-shell::after{content:'';position:absolute;inset:-8px;border:1px solid #72859a44;pointer-events:none}
+.ls-video-shell video{display:block;width:100%;height:100%;object-fit:contain}
+.ls-film-play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(#06132115,#05112055);border:0;color:#f9f5ee;font-size:12px;letter-spacing:.18em;text-shadow:0 2px 6px #000}
+.ls-play-symbol{display:grid;place-items:center;width:76px;height:76px;padding-left:5px;border:1px solid #e1e8ebbb;border-radius:50%;font-size:44px;line-height:1;background:#0a17215c;transition:background .2s,transform .2s}
+.ls-film-play:hover .ls-play-symbol{background:#121e30c4;transform:scale(1.06)}
+.ls-video-shell.is-playing .ls-film-play,.ls-video-shell.is-started .ls-film-play{display:none}
+.ls-film-caption{display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#9baebe;letter-spacing:.07em;margin-top:19px!important}
+.ls-gallery{padding:48px 0 96px}
+.ls-gallery-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px}
+.ls-gallery-heading>p{font-size:12px;color:#95a9b9}
+.ls-gallery-stage{background:#050a10;border:1px solid #778a9c70}
+.ls-gallery-stage>a{display:block;overflow:hidden}.ls-gallery-stage img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ls-gallery-stage figcaption{display:flex;align-items:center;gap:28px;padding:21px 35px;background:url('/images/lastrip/textbox.png') center/100% 100% no-repeat;color:#d7e0e6;font-size:14px;min-height:73px}
+#ls-shot-number{color:#9eadb9;font-size:11px;white-space:nowrap}#ls-shot-caption{flex:1}
+.ls-thumbnails{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;margin-top:21px}
+.ls-thumbnail{position:relative;padding:0;border:1px solid #566a7c55;background:#0b1420;opacity:.55;transition:opacity .18s,border-color .18s}
+.ls-thumbnail img{width:100%;aspect-ratio:16/9;object-fit:cover}.ls-thumbnail span{position:absolute;bottom:5px;left:9px;color:#fff;font-size:10px;text-shadow:0 1px 3px #000;background:#08132188;padding-inline:4px}
+.ls-thumbnail:hover{opacity:.9}.ls-thumbnail[aria-pressed=true]{opacity:1;border-color:#e4c09a;outline:1px solid #e4c09a;outline-offset:4px}
+.ls-follow{position:relative;isolation:isolate;text-align:center;min-height:510px;padding:72px 0 68px;display:flex;align-items:center}
+.ls-follow-snow{position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#0b1420fa,#0b14209c 45%,#0b1420ba 80%,#0b1420),url('/images/lastrip/snow-sea.webp') center 57%/cover no-repeat}
+.ls-small-logo{width:240px;margin:0 auto 11px}.ls-follow h2{font-size:23px;color:#e1d0ba!important}
+.ls-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:13px;margin-top:30px}
+.ls-actions .ls-choice{width:255px;font-size:13px;min-height:47px;padding-left:44px;gap:9px}
+.ls-x-link{display:block;margin-top:23px;font-size:13px;color:#d4dde5!important;letter-spacing:.05em}
+.ls-x-link:hover{color:#e1c19b!important}.ls-release-note{font-size:12px;line-height:1.9;color:#adbeca;max-width:530px;margin:18px auto 0!important}
+.ls-footer{display:grid;grid-template-columns:1fr 2fr auto;align-items:start;gap:35px;padding:45px 0 46px;border-top:1px solid #8ea0b233;font-size:11px;color:#aebdca}
+.ls-footer p{margin-top:7px}.ls-footer dl{display:grid;grid-template-columns:1fr 1fr;gap:14px 25px}.ls-footer dt{font-weight:400;color:#7890a4;line-height:1.6}.ls-footer dd{margin:2px 0 0;color:#c9d3dc}.ls-footer>a{white-space:nowrap}
+@media(min-width:1700px){.ls-identity{margin-left:max(10%,calc((100vw - 1440px)/2));padding-top:70px}.ls-hero-pair{right:calc((100vw - 1700px)/2 - 140px)}}
+@media(max-width:1000px){.ls-hero{height:800px;min-height:740px}.ls-nav{padding:32px 6%}.ls-identity{margin-left:8%;width:39%;padding-top:62px}.ls-hero-pair{width:1130px;right:-310px;bottom:-30px}.ls-tagline{font-size:19px}.ls-subtitle{font-size:11px;letter-spacing:.06em}.ls-hero-foot{bottom:28px}.ls-wrap{width:calc(100% - 70px)}.ls-film-intro{gap:30px}.ls-synopsis{max-width:420px;font-size:16px}.ls-footer{grid-template-columns:1fr 2fr}.ls-footer>a{grid-column:1/-1}}
+@media(max-width:700px){.ls-hero{height:880px;min-height:880px}.ls-nav{padding:23px 27px;font-size:11px;gap:10px}.ls-nav-right{gap:14px}.ls-nav-right>a[href='#ls-gallery'],.ls-nav-divider{display:none}.ls-identity{width:calc(100% - 80px);max-width:350px;margin-left:40px;padding-top:19px}.ls-studio{font-size:10px}.ls-identity h1{width:250px;margin:3px -15px 0!important}.ls-subtitle{margin-top:-10px!important}.ls-tagline{font-size:18px;line-height:1.6;margin-top:17px!important}.ls-hero-actions{gap:6px;margin-top:22px}.ls-choice{width:270px;min-height:45px;font-size:14px}.ls-development{margin-top:14px!important}.ls-hero-landscape{background-position:55% bottom}.ls-hero-landscape::after{background:linear-gradient(0deg,#0b1420,transparent 25%,#0f213580 53%,#0e1d2ee0 85%),linear-gradient(90deg,#0d1c2d55,transparent 70%)}.ls-hero-pair{width:790px;right:-180px;bottom:7px;z-index:0;mask-image:linear-gradient(#000 65%,transparent 100%)}.ls-menu-frame{inset:0;width:100%;height:109%!important;opacity:.55}.ls-hero-foot{inset-inline:27px;bottom:23px;font-size:8px;letter-spacing:.07em}.ls-hero-foot>span:first-child{gap:8px}.ls-route-line{width:24px}.ls-hero-foot>span:last-child{display:none}.ls-hero-foot>a{font-size:21px}.ls-wrap{width:calc(100% - 42px)}.ls-film{padding:53px 0 30px}.ls-film-intro{display:block;margin-bottom:25px}.ls-kicker{font-size:10px}.ls-page h2{font-size:25px}.ls-synopsis{margin-top:17px!important;font-size:16px;line-height:1.8}.ls-video-shell::after{inset:-4px}.ls-play-symbol{width:52px;height:52px;font-size:31px}.ls-film-play{gap:8px;font-size:9px}.ls-film-caption{font-size:9px;letter-spacing:0;gap:10px;align-items:flex-start}.ls-film-caption>span:first-child{max-width:58%}.ls-gallery{padding:35px 0 51px}.ls-gallery-heading{display:block;margin-bottom:21px}.ls-gallery-heading>p{margin-top:12px;font-size:11px}.ls-gallery-stage figcaption{gap:13px;padding:16px 19px;font-size:12px;min-height:66px}#ls-shot-number{font-size:9px}.ls-thumbnails{gap:9px;margin-top:14px}.ls-thumbnail[aria-pressed=true]{outline-offset:2px}.ls-thumbnail span{font-size:8px;bottom:2px;left:3px}.ls-follow{min-height:510px;padding:45px 0}.ls-small-logo{width:190px}.ls-follow h2{font-size:22px}.ls-actions{flex-direction:column;gap:8px;margin-top:22px}.ls-x-link{margin-top:19px}.ls-release-note{max-width:280px;font-size:11px}.ls-footer{display:block;padding:30px 0;font-size:10px}.ls-footer dl{margin:23px 0 22px;gap:12px 15px}}
+@media(max-width:360px){.ls-nav{padding-inline:22px}.ls-nav-right{gap:10px}.ls-nav-right>a[href='#ls-trailer']{display:none}.ls-identity{margin-left:30px;width:calc(100% - 60px)}.ls-choice{width:245px}.ls-hero-pair{width:740px;right:-195px}.ls-hero{height:870px;min-height:870px}}
+@media(max-width:700px){.ls-hero-pair{width:700px;right:-140px;bottom:-12px}}
+@media(max-width:360px){.ls-identity h1{width:calc(100% + 10px)}.ls-choice{width:100%;padding-left:36px;padding-right:17px;font-size:12px}.ls-tagline{font-size:17px}.ls-hero-pair{width:660px;right:-175px;bottom:-10px}.ls-subtitle{font-size:10px;letter-spacing:0}}
+@media(prefers-reduced-motion:reduce){html.lastrip-site{scroll-behavior:auto}.ls-page *{transition:none!important}}
