@@ -1,0 +1,182 @@
+{
+  "method": "Unchanged Kathaeris UI and character-selection cards, cropped/resized for web layout. No generated illustration. Original game files preserved.",
+  "source_sha256": {
+    "title.png": "47eb164bf94f555b46ae39e854d8141e7eaff771970bc79ead9a1bb15e894817",
+    "char_select.png": "ea43c57692fce6ea5f5178e2d7ef93178a2c096e710d090ab42f3d19d99952b3",
+    "prefs.png": "73e9b3cbb3a9075b331c2f5dd04b4c53953bba064213b978db3afac33849d12e",
+    "char_luca_idle.png": "847d5af0bd70203509c8d1e529d7f172f5a1c14dc360e3c2bdeaa31ea90e12d6",
+    "char_natia_idle.png": "ca77f5313c6bf05ad1495b708855b693fd246f11c9829e58dd6e31a8efd3e969",
+    "char_izsna_idle.png": "e773461a2e9d4edb38cba6bf4c8a707019aaef6f83a794d05d658b37dbc5a9b8",
+    "char_gara_idle.png": "3e63fcf04a799b8d81af615100d4dbfebe69ec069f3e129713efb6317383c5ec"
+  },
+  "outputs": {
+    "button.webp": {
+      "bytes": 618,
+      "size": [
+        240,
+        59
+      ]
+    },
+    "flourish.webp": {
+      "bytes": 4276,
+      "size": [
+        164,
+        166
+      ]
+    },
+    "gara.webp": {
+      "bytes": 75980,
+      "size": [
+        439,
+        782
+      ]
+    },
+    "heading-ornament.webp": {
+      "bytes": 6390,
+      "size": [
+        519,
+        94
+      ]
+    },
+    "itch-banner-en.png": {
+      "bytes": 1048888,
+      "size": [
+        1260,
+        646
+      ]
+    },
+    "itch-banner-zh.png": {
+      "bytes": 1051187,
+      "size": [
+        1260,
+        646
+      ]
+    },
+    "itch-cover-en.png": {
+      "bytes": 1132831,
+      "size": [
+        1260,
+        1000
+      ]
+    },
+    "itch-cover-small-en.png": {
+      "bytes": 86184,
+      "size": [
+        315,
+        250
+      ]
+    },
+    "itch-cover-small-zh.png": {
+      "bytes": 85182,
+      "size": [
+        315,
+        250
+      ]
+    },
+    "itch-cover-zh.png": {
+      "bytes": 1138258,
+      "size": [
+        1260,
+        1000
+      ]
+    },
+    "izsna.webp": {
+      "bytes": 79892,
+      "size": [
+        439,
+        782
+      ]
+    },
+    "luca.webp": {
+      "bytes": 74320,
+      "size": [
+        439,
+        782
+      ]
+    },
+    "natia.webp": {
+      "bytes": 63284,
+      "size": [
+        439,
+        782
+      ]
+    },
+    "paper.webp": {
+      "bytes": 6142,
+      "size": [
+        500,
+        500
+      ]
+    },
+    "section-frame.webp": {
+      "bytes": 168772,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "social-en.png": {
+      "bytes": 990173,
+      "size": [
+        1200,
+        675
+      ]
+    },
+    "social-zh.png": {
+      "bytes": 992209,
+      "size": [
+        1200,
+        675
+      ]
+    },
+    "title-background.webp": {
+      "bytes": 211186,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "website-cover-en.webp": {
+      "bytes": 173526,
+      "size": [
+        1260,
+        1000
+      ]
+    },
+    "website-cover-zh.webp": {
+      "bytes": 173828,
+      "size": [
+        1260,
+        1000
+      ]
+    },
+    "website-hero-en.png": {
+      "bytes": 2218243,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "website-hero-en.webp": {
+      "bytes": 353060,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "website-hero-zh.png": {
+      "bytes": 2222797,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "website-hero-zh.webp": {
+      "bytes": 353952,
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  }
+}
