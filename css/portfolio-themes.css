@@ -1,0 +1,112 @@
+/* Two cafe moods. Night is the default; daytime recalls the quiet cream edition. */
+body.portfolio-shell { --cafe-surface:#221321; --cafe-outline:#684055; }
+body.portfolio-shell .cafe-hero-scene {
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  object-position:center 45%; opacity:.48; z-index:-2; pointer-events:none;
+  mask-image:linear-gradient(90deg,transparent 26%,#000 55%),linear-gradient(#000 85%,transparent);
+  mask-composite:intersect;
+}
+body.portfolio-shell .cafe-hero::after {
+  inset:0; height:auto; z-index:-1;
+  background:linear-gradient(90deg,var(--cafe-surface) 0%,transparent 68%);
+  pointer-events:none;
+}
+body.portfolio-shell .cafe-hero-copy { position:relative; background:none; }
+body.portfolio-shell #profileHeader .cafe-nav-search { order:1; }
+body.portfolio-shell #navbarContent { order:2; }
+body.portfolio-shell .cafe-theme-toggle {
+  order:3; flex:none; position:relative; display:grid; place-items:center;
+  width:44px; height:44px; margin-left:16px; padding:0;
+  color:#ffb7cf; background:transparent; border:1px solid var(--cafe-outline);
+  border-radius:50%; cursor:pointer; transition:background .2s,border-color .2s;
+}
+body.portfolio-shell .cafe-theme-toggle:hover { background:#ff9cbe14; border-color:currentColor; }
+.cafe-theme-toggle > span:not(.cafe-theme-hint) { display:grid; place-items:center; }
+.cafe-theme-toggle .portfolio-icon { width:21px; height:21px; stroke-width:1.8; }
+.cafe-theme-toggle .cafe-theme-moon { display:none!important; }
+.cafe-theme-hint {
+  position:absolute; right:0; top:calc(100% + 10px); pointer-events:none;
+  white-space:nowrap; padding:8px 12px; border-radius:7px; border:1px solid var(--cafe-outline);
+  background:#fff7ef; color:#341b2d; font:500 11px/1.5 var(--font-body);
+  opacity:0; visibility:hidden; transform:translateY(-3px); transition:opacity .15s,transform .15s;
+}
+.cafe-theme-toggle:is(:hover,:focus-visible) .cafe-theme-hint { opacity:1; visibility:visible; transform:none; }
+body.portfolio-shell .navbar-toggler { order:4; margin-left:10px; }
+html[data-cafe-theme=day] body.portfolio-shell.light {
+  --cafe-surface:#fcf8f4; --cafe-paper:#fcf8f4; --cafe-ink:#362731;
+  --cafe-muted:#77656e; --cafe-rose:#a63859; --cafe-pink:#a63859;
+  --cafe-line:#e9ddd9; --cafe-outline:#e0cdd5;
+  background:#fcf8f4!important; background-image:none!important; color:#362731!important;
+}
+html[data-cafe-theme=day] body.portfolio-shell #profileHeader .navbar { background:#fcf8f4ed!important; border-color:#e9ddd9; }
+html[data-cafe-theme=day] body.portfolio-shell .navbar-brand { color:#362731!important; }
+html[data-cafe-theme=day] body.portfolio-shell #profileHeader #search { background:#fffaf8!important; color:#362731!important; border-color:#e9ddd9!important; }
+html[data-cafe-theme=day] body.portfolio-shell #search::placeholder { color:#806c77; }
+html[data-cafe-theme=day] body.portfolio-shell #profileHeader .nav-link { color:#715562!important; }
+html[data-cafe-theme=day] body.portfolio-shell #profileHeader .nav-link:hover { color:#a63859!important; }
+html[data-cafe-theme=day] body.portfolio-shell .navbar-toggler { border-color:#e0cdd5; }
+html[data-cafe-theme=day] body.portfolio-shell .navbar-toggler svg { fill:#a63859; }
+html[data-cafe-theme=day] .cafe-theme-toggle .cafe-theme-sun { display:none!important; }
+html[data-cafe-theme=day] .cafe-theme-toggle .cafe-theme-moon { display:grid!important; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-theme-toggle { color:#a63859; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-hero-scene { opacity:.32; }
+html[data-cafe-theme=day] body.portfolio-shell #hero h1 { color:#362731; font-weight:500; }
+html[data-cafe-theme=day] body.portfolio-shell #hero .cafe-intro { color:#77656e; }
+html[data-cafe-theme=day] :is(.cafe-intro strong,.cafe-signature strong) { color:#362731; }
+html[data-cafe-theme=day] .cafe-signature span { color:#77656e; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-button { background:#49333f; color:#fff8f4!important; border-radius:7px; box-shadow:none; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-button:hover { background:#a63859; box-shadow:none; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-text-link { color:#715562; }
+html[data-cafe-theme=day] .cafe-marquee { background:#f3e5e7; color:#815566; border-color:#e9ddd9; }
+html[data-cafe-theme=day] .cafe-fresh { border-color:#e9ddd9; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-fresh .cafe-eyebrow { color:#806572; }
+html[data-cafe-theme=day] .cafe-live-dot { background:#a63859; box-shadow:0 0 0 4px #a638590c; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-fresh a { color:#49333f; border-color:#e9ddd9; background:#fffaf6; border-radius:7px; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-fresh a:hover { background:#f7edef; border-color:#c896a7; }
+html[data-cafe-theme=day] .cafe-fresh-icon { color:#a63859; }
+html[data-cafe-theme=day] :is(.cafe-fresh small,.cafe-fresh a > span > span) { color:#806572; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-section-heading :is(h1,h2),
+html[data-cafe-theme=day] body.portfolio-shell .cafe-contact h2,
+html[data-cafe-theme=day] .cafe-board-heading h3 { color:#362731; }
+html[data-cafe-theme=day] :is(.cafe-section-heading > p,.cafe-filter-count,.cafe-contact-intro > p:not(.cafe-eyebrow),.cafe-copy-email,.cafe-board-heading > span,.cafe-noticeboard > p) { color:#77656e; }
+html[data-cafe-theme=day] .cafe-filters button { color:#715562; border-color:#e1d2d5; background:transparent; border-radius:7px; }
+html[data-cafe-theme=day] .cafe-filters button:is(:hover,[aria-pressed=true]) { color:#7d2a49; border-color:#d8b0c0; background:#f4e6eb; }
+html[data-cafe-theme=day] .cafe-projects .visual-work { background:transparent; border-color:transparent; padding:0; border-radius:0; box-shadow:none; }
+html[data-cafe-theme=day] .cafe-projects .visual-work:hover { transform:translateY(-3px); box-shadow:none; }
+html[data-cafe-theme=day] .cafe-projects .ms-work-cover { border-radius:7px; }
+html[data-cafe-theme=day] .cafe-projects .ms-work-body { padding:17px 0 12px; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-play { background:transparent; border-color:#dbc9d0; border-radius:5px; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-play:hover { background:#f4e6eb; border-color:#c896a7; }
+html[data-cafe-theme=day] .cafe-about { background:#f2e7e5; border-radius:9px; }
+html[data-cafe-theme=day] .cafe-about::after { color:#c694a5; }
+html[data-cafe-theme=day] .cafe-practice span { border-color:#d8bec8; border-radius:4px; }
+html[data-cafe-theme=day] body.portfolio-shell .cafe-email { color:#a63859; }
+html[data-cafe-theme=day] .cafe-contact-candy { opacity:.72; }
+html[data-cafe-theme=day] .cafe-guestbook { background:#fffaf6; border-color:#e4d3d9; border-radius:10px; box-shadow:3px 4px 0 #eadce0; color-scheme:light; }
+html[data-cafe-theme=day] .cafe-guestbook::before { background:#e6b5c6ab; }
+html[data-cafe-theme=day] .cafe-noticeboard { border-color:#e9ddd9; }
+html[data-cafe-theme=day] body.portfolio-shell footer { color:#77656e; border-color:#e9ddd9!important; }
+html[data-cafe-theme=day] body.portfolio-shell footer a { color:#a63859; }
+@media(max-width:991px) {
+  body.portfolio-shell #navbarContent { order:5; }
+  body.portfolio-shell .cafe-theme-toggle { margin-left:auto; }
+  body.portfolio-shell .cafe-nav-search { margin-left:auto; margin-right:20px; }
+  body.portfolio-shell .cafe-hero-scene { object-position:60% center; }
+}
+@media(max-width:700px) {
+  body.portfolio-shell #hero.cafe-hero { min-height:560px; padding:48px 25px 40px; justify-content:center; }
+  body.portfolio-shell .cafe-hero-copy { padding:0; width:100%; max-width:none; }
+  body.portfolio-shell .cafe-hero-scene { position:absolute; inset:0; height:100%; width:100%; object-position:74% center; opacity:.22; mask-image:linear-gradient(90deg,transparent,#000 80%); }
+  body.portfolio-shell .cafe-hero::after { background:linear-gradient(90deg,var(--cafe-surface),transparent); }
+  html[data-cafe-theme=day] body.portfolio-shell .cafe-hero-scene { opacity:.18; }
+  body.portfolio-shell #profileHeader .container-fluid { padding:0 18px; }
+  body.portfolio-shell .navbar-brand { margin-right:8px; }
+  body.portfolio-shell .cafe-nav-search { margin:0; }
+  body.portfolio-shell .cafe-theme-toggle { width:40px; height:44px; }
+  body.portfolio-shell .navbar-toggler { min-width:40px; width:40px; min-height:44px; padding:8px; margin-left:6px; }
+}
+@media(max-width:360px) {
+  body.portfolio-shell .navbar-brand { font-size:16px; }
+  body.portfolio-shell .navbar-brand img { width:24px; height:24px; margin-right:3px; }
+  body.portfolio-shell #profileHeader .container-fluid { padding:0 12px; }
+}
