@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080c1a">
+  <meta name="description" content="Become a little sun. Rescue wandering planets, grow your orbit, and find your way home. A complete eight-sector browser game by Mayflare.">
+  <title>Every Star is Alive · 旅行星</title>
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="stylesheet" href="./style.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#game">跳到游戏 / Skip to game</a>
+  <header class="site-header">
+    <a class="brand" href="/en/games/star/" aria-label="Back to Mayflare's portfolio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6 8 12l6 6M8 12h13"/><circle cx="3" cy="12" r="1"/></svg><span>MAYFLARE<span class="brand-small">A LITTLE UNIVERSE</span></span></a>
+    <div class="header-center" aria-hidden="true"><span class="live-dot"></span> EVERY STAR IS ALIVE</div>
+    <nav class="tools" aria-label="Game settings">
+      <button id="language" class="tool language" type="button" aria-label="Switch to English">EN</button>
+      <button id="sound" class="tool" type="button" aria-label="开启声音" aria-pressed="false" data-tip="声音"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="sound-on" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg></button>
+      <button id="help" class="tool" type="button" aria-label="怎么玩" data-tip="怎么玩"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 8a2.7 2.7 0 1 1 3.5 3c-1 .5-1 1-1 2m0 3h.01"/></svg></button>
+      <button id="pause" class="tool" type="button" aria-label="暂停" data-tip="暂停 · Esc" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button>
+    </nav>
+  </header>
+
+  <main id="game" class="game-shell">
+    <div class="section-line"><span id="edition-label">旅行星 · 浏览器完整篇</span><span id="save-label">8 个星区 · 进度保存在此设备</span></div>
+    <div class="flight-deck">
+      <section class="game-stage" aria-label="星际航行">
+        <canvas id="universe" width="1000" height="625" tabindex="0" aria-label="移动鼠标、触摸，或使用方向键控制太阳。按空格收束引力。">请使用支持 Canvas 的浏览器。 / Your browser needs Canvas support.</canvas>
+        <div class="stage-top" id="stage-hud" hidden>
+          <span class="sector-label" id="sector-label">01 / FIRST LIGHT</span>
+          <span class="elapsed" id="elapsed" aria-label="Elapsed time">00:00</span>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <div class="stage-bottom" id="stage-bottom" hidden><span id="control-hint"></span><span class="coordinate" aria-hidden="true">ORBIT / ∞</span></div>
+      </section>
+
+      <aside class="flight-log" aria-label="Flight information">
+        <div class="log-heading"><span class="eyebrow" id="log-label">航行记录</span><span class="tiny-orbit" aria-hidden="true">✧</span></div>
+        <div class="mission-block"><span id="mission-number" class="mission-number">00 — 08</span><h2 id="mission-name">带上你的<br>小小星系。</h2><p id="mission-description">成为一颗太阳，找回漂流的小星。让引力把大家连在一起。</p></div>
+        <div class="quota-box" aria-live="polite"><div class="quota-title"><span id="quota-label">环绕的伙伴</span><span class="quota-value"><b id="quota-count">0</b><span id="quota-target"> / 3</span></span></div><div id="star-slots" class="star-slots" aria-hidden="true"></div><p id="portal-status">找到伙伴后，星门将会开启。</p></div>
+        <div class="shield-row"><span id="shield-label">星光护盾</span><span id="shields" class="shields" aria-label="3 shields">✦ ✦ ✦</span></div>
+        <div class="flight-actions"><button type="button" id="focus" class="action-button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4M5 5l3 3m8 8 3 3M5 19l3-3m8-8 3-3"/></svg><span id="focus-label">引力收束</span><kbd>SPACE</kbd></button><button type="button" id="release" class="action-button secondary" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="16" r="4"/><path d="m11 13 9-9m-7 0h7v7"/></svg><span id="release-label">释放卫星</span><kbd>E</kbd></button></div>
+        <div class="log-note"><span aria-hidden="true">✧</span><p id="mission-tip">没有倒计时。每一颗星，都可以慢慢找到。</p></div>
+        <button id="chart" type="button" class="chart-button"><span id="chart-label">星图</span><span id="chart-progress">01 / 08</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      </aside>
+    </div>
+    <footer class="game-footer"><p id="footer-line">每一颗星，都有一个可以回去的地方。</p><div><a href="https://geraaer.itch.io/everystar-is-alive" target="_blank" rel="noopener" id="original-link">原版 · itch.io ↗</a><span>BY MAYFLARE</span></div></footer>
+  </main>
+
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><button id="close-help" class="dialog-close" type="button" aria-label="关闭 / Close">×</button><div id="help-content"></div></dialog>
+  <noscript><div class="noscript">这个小游戏需要 JavaScript。 / Please enable JavaScript to play this game.</div></noscript>
+  <script type="module" src="./app.mjs?v=1"></script>
+</body>
+</html>

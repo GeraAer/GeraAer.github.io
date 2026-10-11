@@ -1,0 +1,73 @@
+{
+  "edition": "Tabletop v2.1",
+  "language": "zh-CN",
+  "players": [
+    2,
+    4
+  ],
+  "blood": {
+    "N": 40,
+    "G": 15,
+    "C": 40,
+    "A": 25
+  },
+  "items": {
+    "D": 8,
+    "S": 8,
+    "W": 8
+  },
+  "cards": 144,
+  "character_boards": 6,
+  "table_mats": 1,
+  "reference_cards": 4,
+  "tokens": 17,
+  "trim_mm": [
+    63,
+    88
+  ],
+  "bleed_mm": 3,
+  "safe_mm": 4,
+  "card_paper": "A4 portrait",
+  "duplex": "long edge",
+  "component_paper": "A4 landscape",
+  "scale_percent": 100,
+  "pdfs": [
+    {
+      "file": "silent-feast-v2.1-rules-zh.pdf",
+      "pages": 8,
+      "bytes": 926792,
+      "sha256": "57bb7285a7a08e92cdd9a34692d116e690c021b1df8e3b53b94541cc83208143"
+    },
+    {
+      "file": "silent-feast-v2.1-cards-duplex.pdf",
+      "pages": 48,
+      "bytes": 220256,
+      "sha256": "4debe82cd49916cb7478cecff5ae838292d966b36c6bfac4094ec1fac624da10"
+    },
+    {
+      "file": "silent-feast-v2.1-cards-ink-saving.pdf",
+      "pages": 24,
+      "bytes": 137545,
+      "sha256": "91af7d3b9f4879e022e480aac0999c9228082c87ce76e12dcd06707a51f557e5"
+    },
+    {
+      "file": "silent-feast-v2.1-components.pdf",
+      "pages": 5,
+      "bytes": 2575318,
+      "sha256": "27cd01cffa4fe1adb4fc7c0dc3c12a524615ec2a7f5d1f84f1afd1d67b44ebab"
+    },
+    {
+      "file": "silent-feast-v2.1-components-ink-saving.pdf",
+      "pages": 5,
+      "bytes": 137330,
+      "sha256": "01020478c0d9a97e01735d4f05d73ccf1c3a619ce2d3cbce06cb454e93582624"
+    }
+  ],
+  "qa": {
+    "boundary_cases": 17,
+    "simulated_games": 3000,
+    "actual_human_playtest": false,
+    "physical_print_test": false,
+    "all_pdf_pages_rendered": 90
+  }
+}
