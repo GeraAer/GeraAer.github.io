@@ -12,7 +12,7 @@ html.lastrip-site #content{padding:0!important;margin:0!important;max-width:none
 .ls-page button{font-family:inherit;cursor:pointer}
 .ls-page img{display:block;max-width:100%;height:auto}
 .ls-wrap{width:min(1120px,calc(100% - 100px));margin-inline:auto}
-.ls-hero{position:relative;isolation:isolate;height:min(980px,100svh);min-height:740px;background:#344960}
+.ls-hero{position:relative;isolation:isolate;height:min(980px,100svh);min-height:835px;background:#344960}
 .ls-hero-landscape{position:absolute;inset:0;z-index:-3;background:url('/images/lastrip/snow-shanghai.webp') center 47%/cover no-repeat}
 .ls-hero-landscape::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,36,.93) 0%,rgba(12,25,41,.76) 28%,rgba(17,33,50,.18) 62%,rgba(27,43,56,.12)),linear-gradient(0deg,#0b1420,transparent 28%,transparent 85%,rgba(13,26,39,.44))}
 .ls-hero-pair{position:absolute;z-index:-1;width:min(1320px,98vw);max-width:none!important;right:-12%;bottom:-4%;filter:drop-shadow(0 16px 32px #0b17254d);mask-image:linear-gradient(#000 80%,transparent 100%);pointer-events:none}
