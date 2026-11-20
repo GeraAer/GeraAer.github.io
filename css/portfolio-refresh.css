@@ -80,6 +80,7 @@ body.portfolio-shell .cafe-section-heading :is(h1,h2) { color:#fff4ec; font-size
 .cafe-projects .visual-work { background:#fff7ef; color:#341b2d; border:1px solid #fff7ef; border-radius:15px; box-shadow:0 5px 0 #100b14; backdrop-filter:none; overflow:hidden; transform:none; padding:8px; transition:transform .25s,box-shadow .25s; }
 .cafe-projects .visual-work:hover { transform:translateY(-5px); box-shadow:0 10px 0 #100b14,0 0 0 2px #f09bc0; }
 .cafe-projects .ms-work-cover { position:relative; border-radius:9px; aspect-ratio:16/10; overflow:hidden; background:#211820; }
+.cafe-projects .ms-work-cover picture { display:contents; }
 .cafe-projects .ms-work-cover img { object-fit:contain; transition:transform .4s; width:100%; height:100%; }
 .cafe-projects .ms-work-cover:hover img { transform:scale(1.04); }
 .cafe-cover-arrow { position:absolute; right:11px; bottom:11px; display:grid; place-items:center; width:34px; height:34px; background:#fff4e9; color:#48152e; border-radius:50%; opacity:0; transform:translateY(5px); transition:opacity .2s,transform .2s; }
