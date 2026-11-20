@@ -25,6 +25,7 @@ body.portfolio-shell #profileHeader .nav-link:hover { color:#fff!important; }
 body.portfolio-shell .navbar-toggler { min-width:44px; min-height:44px; border:1px solid #ffffff55; border-radius:50%; }
 body.portfolio-shell .navbar-toggler svg { fill:#ffcadf; }
 body.portfolio-shell #hero.cafe-hero { position:relative; isolation:isolate; max-width:1600px; min-height:670px; margin:auto; padding:78px max(40px,calc((100% - 1216px)/2)); display:flex; align-items:center; line-height:1.5; overflow:hidden; }
+.cafe-hero-image { display:contents; }
 .cafe-hero-scene { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 45%; z-index:-2; }
 .cafe-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#221321ee 0%,#221321be 28%,#22132110 58%,transparent 80%); z-index:-1; }
 .cafe-hero-copy { width:540px; max-width:49%; }
@@ -99,7 +100,7 @@ body.portfolio-shell .cafe-play:hover { border-color:#a52854; background:#ffccdd
 .cafe-projects .ms-detail-link { display:inline-flex; gap:5px; align-items:center; margin-left:auto; padding:8px 0; font-size:10px; min-height:40px; color:#745469; text-decoration:none; }
 .cafe-projects .ms-detail-link:hover { color:#a52854; text-decoration:underline; }
 .cafe-projects .ms-detail-link .portfolio-icon { width:15px; height:15px; }
-.cafe-projects .ms-image-note { margin:12px 0 0; font-size:9px; line-height:1.5; color:#8b6c7d; }
+.cafe-projects .ms-image-note { margin:12px 0 0; font-size:11px; line-height:1.5; color:#76586a; }
 .cafe-about { max-width:1216px; margin:90px auto 0; padding:65px; background:#f7ccd9; color:#341b2d; border-radius:20px; display:grid; grid-template-columns:260px 1fr; gap:85px; align-items:center; scroll-margin-top:95px; position:relative; }
 .cafe-about::after { content:'✦'; position:absolute; top:17px; right:28px; color:#a52854; font-size:65px; }
 .cafe-about-portrait { position:relative; padding:12px 12px 46px; background:#fff9ef; transform:rotate(-5deg); box-shadow:4px 8px 0 #b8597f30; }

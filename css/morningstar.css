@@ -3,7 +3,6 @@
    Themed pages set body.game-themed (+ throng-page / tulips-page / etc.)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=ZCOOL+XiaoWei&display=swap');
 
 :root {
   --ms-ink: #3B2436;

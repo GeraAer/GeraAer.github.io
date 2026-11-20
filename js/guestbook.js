@@ -57,7 +57,7 @@
       more.firstChild.textContent = 'Read more notes ';
       boardStatus.textContent = seen.size ? '' : 'A fresh page, waiting for its first little note. Yours could be the first.';
     } catch {
-      boardStatus.textContent = 'The guestbook is taking a moment. You can try again, or reach me by email.';
+      boardStatus.textContent = 'The guestbook is taking a moment. You can try again, or reach me on X.';
       more.hidden = false;
       more.firstChild.textContent = 'Try loading again ';
     } finally { loading = false; more.disabled = false; }
@@ -87,16 +87,8 @@
       status.dataset.kind = 'error';
       if (error.status === 429) status.textContent = 'A few too many notes at once. Please wait a while and try again. Your note is still here.';
       else if (error.message === 'invalid_email') status.textContent = 'Please check your email address, or leave that field empty.';
-      else if (error.name === 'AbortError') status.textContent = 'That took longer than expected. Your note may have arrived; please wait before trying again. You can also email me.';
-      else status.textContent = 'The note could not be confirmed. Your writing is still here—please try again, or send it by email.';
+      else if (error.name === 'AbortError') status.textContent = 'That took longer than expected. Your note may have arrived; please wait before trying again.';
+      else status.textContent = 'The note could not be confirmed. Your writing is still here—please try again, or reach me on X.';
     } finally { submit.disabled = false; form.removeAttribute('aria-busy'); }
   });
-  const copy = section.querySelector('[data-copy-email]');
-  if (navigator.clipboard && window.isSecureContext) {
-    copy.hidden = false;
-    copy.addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText(copy.dataset.copyEmail); copy.querySelector('span').textContent = 'Copied — thank you for reaching out!'; }
-      catch { copy.querySelector('span').textContent = 'You can select the address above to copy it.'; }
-    });
-  }
 })();
